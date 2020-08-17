@@ -1,21 +1,21 @@
 let projects = [
   {
     title:"Gladkill Music",
-    description:"",
-    frontend:"",
-    backend:"",
-    img:"",
-    link:"",
-    github:""
+    description:"Full stack artist website for electronic musician Gladkill. Responsive mobile-first design styled with Bootstrap and custom CSS. Music catalog page with detail modals, About page with image carousel, and responsive contact form with client-side validation.",
+    frontend:"React, Bootstrap, CSS",
+    backend:"Node/Express, NoSQL/MongoDB/Atlas cloud database",
+    img:"img/gladkill-site.png",
+    link:"https://gladkillmusic.com",
+    github:"https://github.com/boris-gladkikh/gladkill-site"
   },
   {
     title:"Career Cat",
-    description:"",
-    frontend:"",
-    backend:"",
-    img:"",
-    link:"",
-    github:""
+    description:"A full-stack job hosting and application website - User can create an account (with bcrypt security and password hashing), browse job listings by company or job, and single-click “apply” for a job. User can then see a list of applied jobs and edit their profile info on their profile page.",
+    frontend:"React, CSS, Bootstrap",
+    backend:"Node/Express, SQL database with Postgres, custom ORM.",
+    img:"img/career-cat.png",
+    link:"https://career-cat.netlify.app/",
+    github:"https://github.com/boris-gladkikh/react-career-cat-jobly"
   },
   {
     title:"Warbler",
@@ -28,6 +28,7 @@ let projects = [
   },
   {
     title:"Bulletin",
+    message: "Working link coming soon",
     description:"Full-stack bulletin board application which allows users to post without having to sign up. Users can comment on each other’s posts.",
     frontend:"React, Redux, CSS, Bootstrap",
     backend:"Node/Express, SQL/postgres database",

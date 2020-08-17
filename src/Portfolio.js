@@ -8,13 +8,13 @@ import Container from 'react-bootstrap/Container';
 function Portfolio() {
 
   return (
-    <div className="app px-5">
+    <div className="app px-5 pb-5">
       <h2 className="pt-5 pb-3">PORTFOLIO</h2>
       <h5 className="pb-5">You can find some of my personal projects here.</h5>
       <Container className="m-auto mt-5">
         <Row>
           {projectList.map(p => (
-            <Col key={p.title} lg="6" sm="12">
+            <Col key={p.title} xl="4" lg="6" sm="12">
               <Project project={p} />
             </Col>
           ))}

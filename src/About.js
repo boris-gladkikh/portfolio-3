@@ -9,7 +9,7 @@ function About() {
         <div className="text-center">
           <img src={profilePic} alt="Boris pic" className="profile-pic" />
         </div>
-        <div className="px-5 mb-5">
+        <div className="m-auto px-5 mb-5">
           <h2 className="mt-5">HELLO! I'M BORIS.</h2>
           <p style={{ fontSize: "24px" }}>
             I am a Russian born, NY raised software engineer now residing on the west coast.<br />
