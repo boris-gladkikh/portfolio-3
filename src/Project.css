@@ -1,0 +1,11 @@
+.img-card {
+  max-width: 500px;
+}
+
+.info-card {
+  max-width: 500px;
+  color: white;
+  padding:10px;
+  background-color: #B03737;
+  border: 1px solid white;
+}

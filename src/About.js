@@ -13,8 +13,8 @@ function About() {
           <h2 className="mt-5">HELLO! I'M BORIS.</h2>
           <p style={{ fontSize: "24px" }}>
             I am a Russian born, NY raised software engineer now residing on the west coast.<br />
-            I specialize in full stack engineering with an emphasis on front end design and optimization.</p>
-          <p>
+            I specialize in full stack development with an emphasis on front end design and optimization.</p>
+          <p className="m-auto">
             Software engineering is both a career and a passion for me. From a unique and creative approach towards problem
             solving, to intuitive design and intelligent layout, software development has proven to be a rewarding and exciting
             experience. I constantly strive to learn new things and increase my skillset every day.

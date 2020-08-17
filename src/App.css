@@ -1,8 +1,15 @@
+a {
+  color:white !important;
+}
+
+a:hover {
+  color:#48d181 !important;
+}
+
 .app {
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   background-color: #171530;
-  padding: 20px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
 
@@ -12,13 +19,24 @@ body {
     background-color: #171530;
 }
 
+.current {
+  border: 2px solid pink;
+}
+
 
 h2 {
   font-size: 48px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 h3 {
   font-size: 36px;
+  font-family: 'Poppins', sans-serif;
+}
+
+i:hover{
+  color:#48d181 !important;
 }
 
 .line {
@@ -28,6 +46,8 @@ h3 {
 
 p {
   font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 /* FONTS */
@@ -61,3 +81,10 @@ p {
 .red-color {
   background-color:#B03737;
 }
+
+.grey-font {
+  color: #BFBFBF;
+}
+
+
+
