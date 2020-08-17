@@ -1,0 +1,20 @@
+.logo-box {
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background-color: #171530;
+
+}
+
+.header {
+  font-size: 144px;
+  color:#B03737;
+}
+
+.sub-header {
+  font-size: 48px;
+  color:#BFBFBF;
+  margin-top: -100px;
+}
