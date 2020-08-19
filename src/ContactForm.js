@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { postEmail } from './APIHelper';
+import './ContactForm.css';
 
 const defaultData = {
   originSite: "portfolio-site"

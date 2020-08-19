@@ -1,12 +1,13 @@
-.img-card {
-  max-width: 500px;
+.card a {
+  color: white;
+}
+.card a.active {
+color:rgb(29, 183, 235);
 }
 
-.info-card {
-  max-width: 500px;
-  color: white;
-  padding:10px;
-  background-color: #B03737;
-  border: 1px solid white;
-  font-size: 14px;
+.card a:hover {
+  color:rgb(29, 183, 235);
+  text-decoration: none;
+
+
 }

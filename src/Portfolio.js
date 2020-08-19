@@ -10,11 +10,12 @@ function Portfolio() {
   return (
     <div className="app px-5 pb-5">
       <h2 className="pt-5 pb-3">PORTFOLIO</h2>
-      <p className="pb-5">You can find some of my personal projects here.</p>
+      <p className="text-white">You can find some of my personal projects here.</p>
+      <h6 className="pb-5">Click on an image for more info.</h6>
       <Container className="m-auto mt-5">
         <Row>
           {projectList.map(p => (
-            <Col key={p.title} xl="4" lg="6" sm="12">
+            <Col key={p.title}  lg="6" sm="12">
               <Project project={p} />
             </Col>
           ))}

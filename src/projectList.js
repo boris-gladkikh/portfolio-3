@@ -4,7 +4,7 @@ let projects = [
     description:"Full stack artist website for electronic musician Gladkill. Responsive mobile-first design styled with Bootstrap and custom CSS. Music catalog page with detail modals, About page with image carousel, and responsive contact form with client-side validation.",
     frontend:"React, Bootstrap, CSS",
     backend:"Node/Express, NoSQL/MongoDB/Atlas cloud database",
-    img:"img/gladkill-site.png",
+    img:"/projects/gladkill-site.png",
     link:"https://gladkillmusic.com",
     github:"https://github.com/boris-gladkikh/gladkill-site"
   },
@@ -13,7 +13,7 @@ let projects = [
     description:"A full-stack job hosting and application website - User can create an account (with bcrypt security and password hashing), browse job listings by company or job, and single-click “apply” for a job. User can then see a list of applied jobs and edit their profile info on their profile page.",
     frontend:"React, CSS, Bootstrap",
     backend:"Node/Express, SQL database with Postgres, custom ORM.",
-    img:"img/career-cat.png",
+    img:"/projects/career-cat.png",
     link:"https://career-cat.netlify.app/",
     github:"https://github.com/boris-gladkikh/react-career-cat-jobly"
   },
@@ -22,7 +22,7 @@ let projects = [
     description:"Full-stack basic social media clone, allowing user to create an account, follow/unfollow other users and see their posts in timeline, like one another’s posts, write posts, delete posts. User can also search by post as well as edit their profile information and graphics.",
     frontend:"Jinja, HTML, CSS, Bootstrap",
     backend:"Python, Flask, SQL/postgres database, SQLAlchemy ORM",
-    img:"img/warbler-one.png",
+    img:"/projects/warbler-one.png",
     link:"https://bg-warbler.herokuapp.com/",
     github:"https://github.com/boris-gladkikh/warbler"
   },
@@ -32,7 +32,7 @@ let projects = [
     description:"Full-stack bulletin board application which allows users to post without having to sign up. Users can comment on each other’s posts.",
     frontend:"React, Redux, CSS, Bootstrap",
     backend:"Node/Express, SQL/postgres database",
-    img:"img/bulletin-mock.png",
+    img:"/projects/bulletin-mock.png",
     link:"",
     github:"https://github.com/boris-gladkikh/bulletin"
   }
