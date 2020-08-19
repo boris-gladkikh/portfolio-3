@@ -1,26 +1,31 @@
 import React from 'react';
 import './Project.css';
+import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
+
 
 function Project({ project }) {
   return (
     <>
-    <div className="img-card my-3">
+    <Card>
+      <Card.Header className="bg-dark">
       <a href={project.link} rel="noopener noreferrer" target="_blank">
       <img src={project.img} alt={`pic of ${project.title}`}/>
       </a>
-    </div>
-    <div className="info-card my-3"> 
-      <h2>{project.title.toUpperCase()}</h2>
-      <hr className="line m-auto" />
-      <div className="text-left">
+      </Card.Header>
+      <Card.Body className=" text-left bg-dark">
+      <h2 className="text-center">{project.title.toUpperCase()}</h2>
       <p>{project.description}</p>
-      <hr className="line m-auto" />
-      <p>Front end: {project.frontend}</p>
-      <p>Back end: {project.backend}</p>
-      <a href={project.github}>Github</a>
-      </div>
+      <p><b className="text-white">Front end: </b>{project.frontend}</p>
+      <p><b className="text-white">Back end:</b>{project.backend}</p>
 
-    </div>
+      </Card.Body>
+      <Card.Footer className=" bg-dark">
+      <a href={project.github}>Github</a> | <a href={project.link}>Live Demo</a>
+
+      </Card.Footer>
+
+    </Card>
     </>
   )
 

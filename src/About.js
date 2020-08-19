@@ -5,16 +5,16 @@ import './About.css';
 function About() {
   return (
     <>
-      <div className="text-center text-white bg-color py-5">
+      <div className=" blue-box text-center text-white py-5">
         <div className="text-center">
           <img src={profilePic} alt="Boris pic" className="profile-pic" />
         </div>
-        <div className="m-auto px-5 mb-5">
+        <div className="m-auto px-5 mb-5 bio-text">
           <h2 className="mt-5">HELLO! I'M BORIS.</h2>
           <p style={{ fontSize: "24px" }}>
-            I am a Russian born, NY raised software engineer now residing on the west coast.<br />
-            I specialize in full stack development with an emphasis on front end design and optimization.</p>
-          <p className="m-auto">
+            I am a Russian born, NY raised software engineer now residing on the west coast.
+            I specialize in full stack development with an emphasis on front end design and optimization.</p><br/>
+          <p className="m-auto mt-5">
             Software engineering is both a career and a passion for me. From a unique and creative approach towards problem
             solving, to intuitive design and intelligent layout, software development has proven to be a rewarding and exciting
             experience. I constantly strive to learn new things and increase my skillset every day.
@@ -25,8 +25,8 @@ function About() {
         </div>
       </div>
 
-      <div style={{ width: "100%", height: "50vh" }} className="px-5 py-5 red-color text-white text-center">
-        <h2>TOOLKIT</h2>
+      <div style={{ width: "100%", height: "50vh" }} className="px-5 py-5 red-box text-center">
+        <h3>TOOLKIT</h3>
         <h5>
           Javascript, React, Redux, Node/Express, Python, Flask, SQL, Postgres, NoSQL, MongoDB, AWS
         </h5>

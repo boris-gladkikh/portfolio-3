@@ -59,27 +59,27 @@ function ContactForm() {
   };
   return (
     <>
-      <Form onSubmit={handleSubmit} className=" m-auto">
+      <Form onSubmit={handleSubmit} className="form-width m-auto">
 
         <Row>
           <Col sm="12" md="6">
             <Form.Group>
-              <Form.Label htmlFor="name"></Form.Label>
-              <Form.Control required onChange={handleChange} name="name" type="text" placeholder="Name - Ex: Korben Dallas"></Form.Control>
+              <Form.Label htmlFor="name">Name</Form.Label>
+              <Form.Control required onChange={handleChange} name="name" type="text" placeholder="Ex: Korben Dallas"></Form.Control>
             </Form.Group>
           </Col>
           <Col sm="12" md="6">
             <Form.Group>
-              <Form.Label htmlFor="email"></Form.Label>
-              <Form.Control required onChange={handleChange} name="email" type="email" placeholder="Email - Ex: Leeloo@gmail.com"></Form.Control>
+              <Form.Label htmlFor="email">Email</Form.Label>
+              <Form.Control required onChange={handleChange} name="email" type="email" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
               <Form.Text>I will never share your E-mail address with anyone else.</Form.Text>
             </Form.Group>
           </Col>
         </Row>
 
         <Form.Group>
-          <Form.Label htmlFor="body"></Form.Label>
-          <Form.Control required onChange={handleChange} name="body" as="textarea" rows="5" placeholder="Body - Be Descriptive!"></Form.Control>
+          <Form.Label htmlFor="body">Body</Form.Label>
+          <Form.Control required onChange={handleChange} name="body" as="textarea" rows="5" placeholder="Be Descriptive!"></Form.Control>
         </Form.Group>
 
         <div>

@@ -5,3 +5,8 @@
 .neg {
   color: darkorange;
 }
+
+.form-width {
+  max-width: 80vh;
+  margin: auto;
+}
