@@ -11,7 +11,7 @@ function Contact() {
       <h2 className="pb-5">CONTACT</h2>
       <div className="bio-text">
       <h4 className="">I am currently looking for new employment opportunities!</h4>
-      <p className="text-white">Click on the icon below to download my resume.</p>
+      <h6 className="text-white mb-4">Click on the icon below to download my resume.</h6>
       
       <a href=""><p><i><i className="text-white fa-4x far fa-file"></i></i></p></a>
       <p className="mt-5">
@@ -21,7 +21,7 @@ function Contact() {
       </div>
       <ContactIcons />
     </div>
-    <div className="text-center text-white red-box p-5 ">
+    <div className="text-center text-white teal-box p-5 ">
       <h2 className="mb-5">I'd love to hear from you.</h2>
       <ContactForm />
     

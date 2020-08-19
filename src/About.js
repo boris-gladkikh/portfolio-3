@@ -12,21 +12,21 @@ function About() {
         </div>
         <div className="m-auto px-5 mb-5 bio-text">
           <h2 className="mt-5">HELLO! I'M BORIS.</h2>
-          <p style={{ fontSize: "24px" }}>
-            I am a Russian born, NY raised software engineer now residing on the west coast.
+          <p style={{ fontSize: "18px", color:"white" }}>
+            I am a Russian born, NY raised software engineer now residing on the west coast.<br/>
             I specialize in full stack development with an emphasis on front end design and optimization.</p><br/>
           <p className="m-auto mt-5">
             Software engineering is both a career and a passion for me. From a unique and creative approach towards problem
             solving, to intuitive design and intelligent layout, software development has proven to be a rewarding and exciting
             experience. I constantly strive to learn new things and increase my skillset every day.<br/>
-            When I'm not coding or learning I spend my time playing piano, writing and recording music, cooking and loving food
+            When I'm not coding I spend my time playing piano, writing and recording music, cooking and loving food
             of all kinds, reading sci-fi and horror, playing games (videogames, tabletop, and board games), watching cinema and
             shows (let's talk about Watchmen!) and hanging out with my cat and dog.
         </p>
         </div>
       </div>
 
-      <div className="px-5 py-5 red-box text-center">
+      <div className="px-5 py-5 teal-box text-center">
         <div className="mb-5">
         <h3>TOOLKIT</h3>
         <h5>

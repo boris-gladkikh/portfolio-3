@@ -1,6 +1,8 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import {NavLink} from 'react-router-dom';
+import './Navbar.css'
 
 function NavBar() {
   return (
@@ -8,11 +10,19 @@ function NavBar() {
       <Navbar expand="lg"  variant="dark" className=" bg-color justify-content-end" >
         <Navbar.Toggle aria-controls="navigation"/>
         <Navbar.Collapse id="navigation" className="text-center justify-content-end">
-        <Nav style={{fontSize:"18px"}}className="text-white">
-          <Nav.Link href="/">HOME</Nav.Link>
-          <Nav.Link href="/about">ABOUT</Nav.Link>
-          <Nav.Link href="portfolio">PORTFOLIO</Nav.Link>
-          <Nav.Link href="/contact">CONTACT</Nav.Link>
+        <Nav style={{fontSize:"18px"}}className="text-white ">
+          <Nav.Item>
+          <NavLink className="px-1" exact to="/">HOME</NavLink>
+          </Nav.Item>
+          <Nav.Item>
+          <NavLink className="px-1" to="/about">ABOUT</NavLink>       
+          </Nav.Item>
+          <Nav.Item>
+          <NavLink className="px-1" to="portfolio">PORTFOLIO</NavLink>
+          </Nav.Item>
+          <Nav.Item>
+          <NavLink className="px-1" to="/contact">CONTACT</NavLink>
+          </Nav.Item>
         </Nav>
         </Navbar.Collapse>
       </Navbar>

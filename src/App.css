@@ -1,9 +1,9 @@
 a {
-  color:white !important;
+  color:white;
 }
 
 a:hover {
-  color:#0096c3 !important;
+  color:#2b768d;
 }
 
 .app {
@@ -12,8 +12,6 @@ a:hover {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   color: #BFBFBF;
-
-
 }
 
 body {

@@ -1,0 +1,17 @@
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: #2b768d;
+  text-decoration: none;
+}
+nav a.active {
+  font-weight: bold;
+  color: #2b768d;
+
+}
+
+nav a.active:hover {
+  color: rgb(29, 183, 235) !important;
+}

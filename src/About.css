@@ -8,7 +8,7 @@
   background-color: #171530;
 }
 
-.red-box {
+.teal-box {
   min-height: 50vh;
   background-color: #2b768d;
   /* background-color: #B03737; */
@@ -21,6 +21,13 @@
   width: 80%;
   margin: auto;
   color: #bfbfbf;
+}
 
-
+@media only screen and (max-width: 600px) {
+  .bio-text {
+    width:100%;
+  }
+  .bio-text > p {
+    text-align:left;
+  }
 }
