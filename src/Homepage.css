@@ -10,7 +10,8 @@
 
 .header {
   font-size: 144px;
-  color:#2b768d;
+  /* color:#2b768d; */
+  color: rgb(29, 183, 235);
 }
 
 .sub-header {
