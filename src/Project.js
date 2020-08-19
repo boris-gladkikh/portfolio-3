@@ -23,7 +23,7 @@ function Project({ project }) {
               <p><b className="text-white">Front end: </b>{project.frontend}</p>
               <p><b className="text-white">Back end:</b>{project.backend}</p>
               <div className="text-center">
-                <a href={project.github}>Github</a> | <a href={project.link}>Live Demo</a>
+                <a target="_blank" rel="noopener noreferrer" href={project.github}>Github</a> | <a target="_blank" rel="noopener noreferrer" href={project.link}>Live Demo</a>
               </div>
             </Card.Body>
           </Accordion.Collapse>
