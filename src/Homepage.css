@@ -18,3 +18,24 @@
   color:#BFBFBF;
   margin-top: -100px;
 }
+
+@media only screen and (max-width:900px) {
+  .header {
+    font-size:80px;
+  }
+  .sub-header {
+    font-size: 24px;
+    margin-top: -55px;
+
+  }
+}
+@media only screen and (max-width:600px) {
+  .header {
+    font-size:60px;
+  }
+  .sub-header {
+    font-size: 18px;
+    margin-top: -50px;
+
+  }
+}
