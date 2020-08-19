@@ -1,16 +1,7 @@
 import axios from 'axios';
 const BASEURL = "https://gladkill-backend.herokuapp.com";
 
-
-export async function getAllProjects(){
-  try {
-    let response = await axios.get(`${BASEURL}/projects`);
-    return response.data;
-  }
-  catch(err){
-    console.error("Error with API call", err);
-  }
-}
+//posts email to backend server
 
 export async function postEmail(email) {
   try{
@@ -19,6 +10,11 @@ export async function postEmail(email) {
     
   }
   catch(err){
-    console.log(err);
+    console.error("API Error:", err);
+    if(err.response){
+      let message = err.response.data.message;
+      throw Array.isArray(message) ? message : [message];
+    }
+    throw ["Something went wrong..."]
   }
 }

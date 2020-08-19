@@ -13,24 +13,22 @@ const defaultData = {
 function ContactForm() {
   let [formData, setFormData] = useState({ ...defaultData });
   let [submitMsg, setSubmitMsg] = useState("");
-  let [msgClass, setMsgClass] = useState("");
+  let [msgClass, setMsgClass] = useState("pos");
   let [isSubmitting, setIsSubmitting] = useState(false);
 
-  useEffect(function () {
-    async function postEmailToServer(formData) {
+  //uses API call to post email to server, setting submit msg. if error occurs, neg submit msg is set.
+  
+  useEffect(function handleFomSubmit() {
+
+    async function postEmailToServer() {
       try {
-        let response = await postEmail();
-        setMsgClass("pos");
+        await postEmail(formData);
         setSubmitMsg("Successfully Submitted");
-        console.log("formData", formData)
-        console.log("API success", response)
       }
       catch (err) {
         console.log("API Error:", err);
-        setSubmitMsg(messages => (
-          [...messages, ...err.message]
-        ));
         setMsgClass("neg")
+        setSubmitMsg(err);
       }
       finally {
         setIsSubmitting(false);
@@ -39,12 +37,14 @@ function ContactForm() {
     if (isSubmitting) {
       postEmailToServer();
     }
-  }, [isSubmitting, formData, setFormData])
+
+  }, [isSubmitting, formData])
 
 
 
   function handleSubmit(evt) {
     evt.preventDefault();
+    console.log("this is form data on submit", formData)
     setIsSubmitting(true);
 
   };
@@ -58,6 +58,8 @@ function ContactForm() {
       }
     ));
   };
+
+
   return (
     <>
       <Form onSubmit={handleSubmit} className="form-width m-auto">
