@@ -29,7 +29,7 @@ let projects = [
   {
     title:"Bulletin",
     message: "Working link coming soon",
-    description:"Full-stack bulletin board application which allows users to post without having to sign up. Users can comment on each other’s posts.",
+    description:"Full-stack bulletin board application which allows users to post without having to sign up. Users can comment on each other’s posts. (LINK COMING SOON)",
     frontend:"React, Redux, CSS, Bootstrap",
     backend:"Node/Express, SQL/postgres database",
     img:"/projects/bulletin-mock.png",
