@@ -3,7 +3,7 @@ a {
 }
 
 a:hover {
-  color:#48d181 !important;
+  color:#0096c3 !important;
 }
 
 .app {
@@ -39,7 +39,7 @@ h3 {
 }
 
 i:hover{
-  color:#48d181 !important;
+  color:#0096c3 !important;
 }
 
 .line {
@@ -83,6 +83,10 @@ p {
 
 .red-color {
   background-color:#B03737;
+}
+
+.light-blue-color {
+  background-color: #2b768d;
 }
 
 .grey-font {

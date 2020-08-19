@@ -1,5 +1,6 @@
 import React from 'react';
 import profilePic from './img/profile-photo.png';
+import ToolkitIcons from './ToolkitIcons';
 import './About.css';
 
 function About() {
@@ -17,7 +18,7 @@ function About() {
           <p className="m-auto mt-5">
             Software engineering is both a career and a passion for me. From a unique and creative approach towards problem
             solving, to intuitive design and intelligent layout, software development has proven to be a rewarding and exciting
-            experience. I constantly strive to learn new things and increase my skillset every day.
+            experience. I constantly strive to learn new things and increase my skillset every day.<br/>
             When I'm not coding or learning I spend my time playing piano, writing and recording music, cooking and loving food
             of all kinds, reading sci-fi and horror, playing games (videogames, tabletop, and board games), watching cinema and
             shows (let's talk about Watchmen!) and hanging out with my cat and dog.
@@ -25,7 +26,7 @@ function About() {
         </div>
       </div>
 
-      <div style={{ width: "100%", height: "50vh" }} className="px-5 py-5 red-box text-center">
+      <div className="px-5 py-5 red-box text-center">
         <h3>TOOLKIT</h3>
         <h5>
           Javascript, React, Redux, Node/Express, Python, Flask, SQL, Postgres, NoSQL, MongoDB, AWS

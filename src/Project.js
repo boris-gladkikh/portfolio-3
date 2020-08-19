@@ -7,7 +7,7 @@ import Accordion from 'react-bootstrap/Accordion';
 function Project({ project }) {
   return (
     <>
-    <Card>
+    <Card classNamew="mt-5">
       <Card.Header className="bg-dark">
       <a href={project.link} rel="noopener noreferrer" target="_blank">
       <img src={project.img} alt={`pic of ${project.title}`}/>

@@ -4,14 +4,16 @@
 }
 
 .blue-box {
-  min-height: 80vh;
+  min-height: 70vh;
   background-color: #171530;
 }
 
 .red-box {
-  min-height: 60vh;
-  background-color: #B03737;
-  color: #bfbfbf;
+  min-height: 50vh;
+  background-color: #2b768d;
+  /* background-color: #B03737; */
+  /* color: #bfbfbf; */
+  color: black;
 }
 
 

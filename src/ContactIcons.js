@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ContactButtons() {
+function ContactIcons() {
   return (
     <>
-      <div className="mb-2 p-3 mt-5">
+      <div className=" p-3 mt-5">
         <a href="mailto:borisagladkikh@gmail.com" rel="noopener noreferrer" target="_blank">
           <i className=" fa-2x fa fa-envelope-open-text mx-2 text-white"></i>
         </a>
@@ -25,4 +25,4 @@ function ContactButtons() {
   )
 }
 
-export default ContactButtons
+export default ContactIcons
