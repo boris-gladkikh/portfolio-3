@@ -38,6 +38,12 @@ h3 {
   color:white;
 }
 
+h4,h5,h6 {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
 i:hover{
   color:#0096c3 !important;
 }

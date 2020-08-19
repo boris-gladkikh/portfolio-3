@@ -27,6 +27,7 @@ function About() {
       </div>
 
       <div className="px-5 py-5 red-box text-center">
+        <div className="mb-5">
         <h3>TOOLKIT</h3>
         <h5>
           Javascript, React, Redux, Node/Express, Python, Flask, SQL, Postgres, NoSQL, MongoDB, AWS
@@ -35,6 +36,9 @@ function About() {
         <h5>
           HTML5, CSS3, Photoshop, Illustrator, Figma, RESTful APIs, Git, Github
         </h5>
+        </div>
+
+        <ToolkitIcons />
 
       </div>
 
