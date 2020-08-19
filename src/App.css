@@ -93,6 +93,10 @@ p {
   background-color: #2b768d;
 }
 
+.light-blue-text {
+  color: rgb(29, 183, 235);
+}
+
 .grey-font {
   color: #BFBFBF;
 }

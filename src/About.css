@@ -3,16 +3,26 @@
   width: 200px;
 }
 
+/* BOXES */
 .blue-box {
+  min-height: 70vh;
+  background-color: #171530;
+}
+.bluer-box {
   min-height: 70vh;
   background-color: #171530;
 }
 
 .teal-box {
-  min-height: 50vh;
+  min-height: 60vh;
   background-color: #2b768d;
-  /* background-color: #B03737; */
   color: #bfbfbf;
+}
+
+.hello-text {
+  font-family: 'Alata', sans-serif;
+  font-size: 52px;
+
 }
 
 
