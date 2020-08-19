@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePic from './img/profile-photo.png';
+import profilePic from './img/profile-photo.jpg';
 import ToolkitIcons from './ToolkitIcons';
 import './About.css';
 
