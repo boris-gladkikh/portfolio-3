@@ -13,7 +13,7 @@ function Contact() {
       <h4 className="">I am currently looking for new employment opportunities!</h4>
       <h6 className="text-white mb-4">Click on the icon below to download my resume.</h6>
       
-      <a href=""><p><i><i className="text-white fa-4x far fa-file"></i></i></p></a>
+      <a href="https://github.com/boris-gladkikh/updatedportfolio/blob/master/Boris%20Gladkikh%202020%20Resume.pdf"><p><i><i className="text-white fa-4x far fa-file"></i></i></p></a>
       <p className="mt-5">
       For project inquiries, possible employment, collaborative endeavors, etc. please E-mail 
       me, use the provided contact form, or find me at any of the social media links below.
