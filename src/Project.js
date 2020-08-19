@@ -17,7 +17,7 @@ function Project({ project }) {
           </Card.Header>
 
           <Accordion.Collapse eventKey="0">
-            <Card.Body className=" text-left bg-dark">
+            <Card.Body className=" text-left bg-color">
               <h2 className="text-center">{project.title.toUpperCase()}</h2>
               <p>{project.description}</p>
               <p><b className="text-white">Front end: </b>{project.frontend}</p>
