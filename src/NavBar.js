@@ -10,7 +10,7 @@ function NavBar() {
       <Navbar expand="lg"  variant="dark" className=" bg-color justify-content-end" >
         <Navbar.Toggle aria-controls="navigation"/>
         <Navbar.Collapse id="navigation" className="text-center justify-content-end">
-        <Nav style={{fontSize:"18px"}}className="text-white ">
+        <Nav style={{fontSize:"18px"}}className=" alata-font text-white ">
           <Nav.Item>
           <NavLink className="px-1" exact to="/">HOME</NavLink>
           </Nav.Item>
