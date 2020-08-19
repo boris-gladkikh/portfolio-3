@@ -15,6 +15,6 @@ export async function postEmail(email) {
       let message = err.response.data.message;
       throw Array.isArray(message) ? message : [message];
     }
-    throw ["Something went wrong..."]
+    throw new Error("Something went wrong", err);
   }
 }

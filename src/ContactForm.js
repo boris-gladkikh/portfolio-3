@@ -17,7 +17,7 @@ function ContactForm() {
   let [isSubmitting, setIsSubmitting] = useState(false);
 
   //uses API call to post email to server, setting submit msg. if error occurs, neg submit msg is set.
-  
+
   useEffect(function handleFomSubmit() {
 
     async function postEmailToServer() {
@@ -28,7 +28,7 @@ function ContactForm() {
       catch (err) {
         console.log("API Error:", err);
         setMsgClass("neg")
-        setSubmitMsg(err);
+        setSubmitMsg(err.message);
       }
       finally {
         setIsSubmitting(false);
