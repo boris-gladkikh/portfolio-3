@@ -11,7 +11,7 @@ function Homepage() {
       <div className="logo-box text-center">
         <div className="logo-content">
         <p className=" header righteous-font">BORIS GLADKIKH</p>
-        <p className=" poppins-font sub-header">FULL STACK SOFTWARE ENGINEER</p>
+        <p className=" alata-font sub-header">FULL STACK SOFTWARE ENGINEER</p>
         </div>
       </div>
       <div className="mini-nav">
