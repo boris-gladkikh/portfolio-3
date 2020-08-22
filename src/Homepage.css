@@ -1,42 +1,97 @@
-.logo-box {
+.logo-container {
   height: 100vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
   align-items:center;
   background-color: #171530;
+  padding: 20px;
 
+}
+
+/* .header {
+  font-size: 144px;
+  color: rgb(29, 183, 235);
+}  */
+
+.sub-header {
+  font-size: 42px;
+  color:#BFBFBF;
+  margin-top: -50px;
 }
 
 .header {
-  font-size: 144px;
-  /* color:#2b768d; */
-  color: rgb(29, 183, 235);
+  font-size: 120px;
+  background-image: url(https://media.giphy.com/media/BDucPOizdZ5AI/giphy.gif);
+  /* background-image: url(https://media.giphy.com/media/RN8wSvkVjFcLc96B7F/giphy.gif); */
+  background-size: contain;
+  color: transparent;
+  text-transform: uppercase;
+  /* line-height: .75; */
+  margin: 10px 0;
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: .5px white;
+  padding: 50px  50px 0px 50px
 }
 
-.sub-header {
-  font-size: 48px;
-  color:#BFBFBF;
-  margin-top: -90px;
-}
 
-@media only screen and (max-width:900px) {
+
+@media only screen and (max-width:1200px) {
   .header {
     font-size:80px;
   }
   .sub-header {
-    font-size: 24px;
-    margin-top: -55px;
+    font-size: 18px;
+    margin-top: -30px;
 
   }
 }
 @media only screen and (max-width:600px) {
   .header {
-    font-size:60px;
+    font-size:52px;
   }
-  .sub-header {
-    font-size: 18px;
-    margin-top: -45px;
 
+  .sub-header {
+    font-size: 12px;
+    margin-top: -20px;
   }
+}
+
+.logo-box{
+  transform:rotateY(0deg);
+  transform-style: preserve-3d;
+  /* background-color:pink; */
+  padding: 5px;
+
+}
+
+/* .logo-box:hover .logo-content {
+  transition: transform 2000ms ease-in-out;
+  transform:rotateY(360deg);
+} */
+
+.mini-nav {
+  margin-top: -10px;
+}
+
+ .logo-container a {
+  color: #BFBFBF;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.logo-container a:hover {
+  color: rgb(29, 183, 235);
+  text-decoration: none;
+}
+.logo-container a.active {
+  font-weight: bold;
+  color: #2b768d;
+
+}
+
+.logo-container a.active:hover {
+  color: rgb(29, 183, 235) !important;
 }

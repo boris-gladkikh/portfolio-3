@@ -18,7 +18,7 @@ function NavBar() {
           <NavLink className="px-1" to="/about">ABOUT</NavLink>       
           </Nav.Item>
           <Nav.Item>
-          <NavLink className="px-1" to="portfolio">PORTFOLIO</NavLink>
+          <NavLink className="px-1" to="/portfolio">PORTFOLIO</NavLink>
           </Nav.Item>
           <Nav.Item>
           <NavLink className="px-1" to="/contact">CONTACT</NavLink>
