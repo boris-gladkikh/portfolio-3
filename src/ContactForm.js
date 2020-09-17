@@ -62,7 +62,7 @@ function ContactForm() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit} className="pt-5 text-white form-width m-auto">
+      <Form onSubmit={handleSubmit} className="pt-5 text-white form-style m-auto">
 
         <Row>
           <Col sm="12" md="6">
@@ -74,11 +74,16 @@ function ContactForm() {
           <Col sm="12" md="6">
             <Form.Group>
               <Form.Label htmlFor="email">Email</Form.Label>
-              <Form.Control required onChange={handleChange} name="email" type="email" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
-              <Form.Text>I will never share your E-mail address with anyone else.</Form.Text>
+              <Form.Control required onChange={handleChange} name="email" type="text" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
+              <Form.Text>I will never share your Email address with anyone else.</Form.Text>
             </Form.Group>
           </Col>
         </Row>
+
+        <Form.Group>
+              <Form.Label htmlFor="subject">Subject</Form.Label>
+              <Form.Control required onChange={handleChange} name="subject" type="subject" placeholder="Ex: I want a website!"></Form.Control>
+            </Form.Group>
 
         <Form.Group>
           <Form.Label htmlFor="body">Body</Form.Label>

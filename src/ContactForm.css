@@ -1,12 +1,15 @@
-.pos {
-  color: lightgreen;
+
+.form-style {
+  max-width: 90vh;
+  margin: auto;
+  padding: 3rem;
 }
+
 
 .neg {
   color: tomato;
 }
 
-.form-width {
-  max-width: 90vh;
-  margin: auto;
+.pos {
+  color: lightgreen;
 }

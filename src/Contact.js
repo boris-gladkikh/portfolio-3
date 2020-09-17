@@ -29,10 +29,6 @@ function Contact() {
             </strong>
       </p>
 
-          <h6 className="text-white mt-4 mb-4">Click on the icon below to download my resume.</h6>
-          <a href={resumeLink}>
-            <i className="text-white fa-4x far fa-file"></i>
-          </a>
         </div>
         <ContactIcons />
       </div>

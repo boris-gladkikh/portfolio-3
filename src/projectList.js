@@ -1,7 +1,7 @@
 let projects = [
   {
     title:"Gladkill Music",
-    description:"Full stack artist website for electronic musician Gladkill. Responsive mobile-first design styled with Bootstrap and custom CSS. Music catalog page with detail modals, About page with image carousel, and responsive contact form with client-side validation.",
+    description:"Artist website for electronic musician Gladkill. Responsive mobile-first design styled with Bootstrap and custom CSS. Music catalog page with detail modals, About page with image carousel, and responsive contact form with client-side validation.",
     frontend:"React, Bootstrap, CSS",
     backend:"Node/Express, NoSQL/MongoDB/Atlas cloud database",
     img:"/projects/gladkill-site.jpg",

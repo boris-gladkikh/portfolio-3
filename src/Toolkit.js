@@ -5,7 +5,7 @@ import './Toolkit.css';
 
 let programsArray = [
   "Javascript", "React", "Redux", "Node",  "ExpressJS",
-  "HTML", "CSS", "Python", "Flask", "SQL/Postgres", "NoSQL/MongoDB", "Figma",
+  "HTML", "CSS", "Python", "Flask", "PostgreSQL", "MongoDB", "Figma",
   "Photoshop", "Illustrator",  "RESTful APIs", "Git"];
 
 let programList = programsArray.map(item => (

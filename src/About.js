@@ -46,7 +46,8 @@ function About() {
         </h3>
           <p className="m-auto p-5 bio-text">
             I spend my time playing piano, writing and recording music, cooking and loving food
-            of all kinds, reading sci-fi and horror, playing games (videogames, tabletop, and board games), watching cinema and
+            of all kinds, riding my skateboard, hiking and spending time in nature, reading sci-fi, futurism 
+            and horror, playing games (videogames, tabletop, and board games), watching cinema and
             shows (let's talk about Watchmen!) and hanging out with my cat & dog.
         </p>
         </div>
