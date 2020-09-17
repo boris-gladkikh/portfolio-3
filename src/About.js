@@ -14,7 +14,7 @@ function About() {
         <div className="m-auto px-5 mb-5 bio-text">
           <h2 className="hello-text mt-5">HELLO! I'M BORIS.</h2>
 
-          <h3 className="mt-5 ">
+          <h3 className="mt-5 prompt-font text-white ">
             I am a Russian born, NY raised software engineer now residing on the west coast.<br />
           </h3>
           <h5 className="my-5 light-blue-text">
