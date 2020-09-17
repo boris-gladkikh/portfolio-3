@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <div className="blue-box text-center p-5">
+      <div className="bluer-box text-center p-5">
         <h2 className="mb-5 alata-font">I'D LOVE TO HEAR FROM YOU.</h2>
         <ContactForm />
       </div>
@@ -18,12 +18,15 @@ function Contact() {
 
       <div className=" teal-box text-center  p-5 ">
         <div className="">
-          <h4 className="alata-font text-white  pb-2 mb-5 ">
+          <h4 className="alata-font text-white mt-5  pb-2 mb-5 ">
             I AM CURRENTLY LOOKING FOR NEW EMPLOYMENT OPPORTUNITIES.
           </h4>
-          <p className="mt-5 w-75 m-auto ">
+          <p className="mt-5 pt-2 w-75 m-auto ">
+            <strong>
             For inquiries, offers, collaborative endeavors, etc. please E-mail
             me, use the provided contact form, or find me at any of the social media links below.
+
+            </strong>
       </p>
 
           <h6 className="text-white mt-4 mb-4">Click on the icon below to download my resume.</h6>

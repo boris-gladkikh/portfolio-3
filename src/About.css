@@ -5,11 +5,11 @@
 
 /* BOXES */
 .blue-box {
-  min-height: 80vh;
+  min-height: 90vh;
   background-color: #171530;
 }
 .bluer-box {
-  min-height: 70vh;
+  min-height: 80vh;
   background-color: #171530;
   color: #282828;
 
