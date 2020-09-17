@@ -32,17 +32,20 @@
 }
 
 
-.bio-text {
-  width: 80%;
+.bio-text, .bio-text-2 {
+  width: 85%;
   margin: auto;
-  color: #bfbfbf;
+  color: #a1a1a1;
 }
 
-@media only screen and (max-width: 600px) {
+.center-box {
+  position: relative;
+  top: 200px;
+}
+
+@media only screen and (max-width: 800px) {
   .bio-text {
     width:100%;
   }
-  .bio-text > p {
-    text-align:left;
-  }
+
 }

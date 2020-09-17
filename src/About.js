@@ -20,6 +20,16 @@ function About() {
           <h5 className="my-5 light-blue-text">
             I specialize in full stack development with an emphasis on front end design and optimization.
             </h5>
+          <p className="m-auto px-2 bio-text text-white">
+            My goal as a software engineer is to develop bold, elegant front end design, and a pleasant and
+            intuitive user experience. I take pleasure from finding unique solutions to challenges, and from
+            seeing successful applications launched, deployed, and maintained. I strive to write code that is
+            easy to read, performant, thoughtful and scalable. I feel comfortable working with client side
+            front end code, as well as back end applications, databases and API’s.<br /><br /> I have worked on
+            several freelance projects, including sites for electronic artists Gladkill and Satellite Respond.
+            I also held a software engineer intern position with Livestack.io. I am now seeking the next
+            step in my development journey and I am actively pursuing employment opportunities.
+        </p>
         </div>
       </div>
 
@@ -29,21 +39,17 @@ function About() {
       </div>
 
       <div className="bluer-box text-center">
-        <h3 className="py-5 light-blue-text alata-font">
-          SOFTWARE DEVELOPMENT IS MY PASSION.          </h3>
-        <p className="m-auto px-5 bio-text text-white">
-          From a unique and creative approach towards problem
-          solving, to intuitive design and intelligent layout, software development continues to captivate and inspire me, and has proven to be a rewarding and exciting
-          career path.
-        </p>
-        <h3 className="alata-font pt-5">
-          WHEN I'M NOT CODING...
+
+        <div className="center-box">
+          <h3 className="alata-font pt-5 light-blue-text ">
+            WHEN I'M NOT CODING...
         </h3>
-        <p className="m-auto px-5 pb-5 bio-text">
-          I spend my time playing piano, writing and recording music, cooking and loving food
-          of all kinds, reading sci-fi and horror, playing games (videogames, tabletop, and board games), watching cinema and
-          shows (let's talk about Watchmen!) and hanging out with my cat & dog.
+          <p className="m-auto p-5 bio-text">
+            I spend my time playing piano, writing and recording music, cooking and loving food
+            of all kinds, reading sci-fi and horror, playing games (videogames, tabletop, and board games), watching cinema and
+            shows (let's talk about Watchmen!) and hanging out with my cat & dog.
         </p>
+        </div>
       </div>
 
     </>
