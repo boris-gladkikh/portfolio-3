@@ -26,7 +26,7 @@ function Homepage() {
             <NavLink to="/portfolio">PORTFOLIO</NavLink>|
         </Nav.Item>
           <Nav.Item>
-            <NavLink to={resumeLink}>RESUME</NavLink>
+            <a href={resumeLink}>RESUME</a>
           </Nav.Item>
         </Nav>
       </div>
