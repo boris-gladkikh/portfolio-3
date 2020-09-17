@@ -1,0 +1,12 @@
+.toolkit-item {
+  overflow:hidden; 
+  text-overflow: ellipsis;
+  transition: all 300ms;
+}
+
+.toolkit-item:hover {
+  overflow: visible;
+  color:white;
+  cursor: crosshair;
+
+}

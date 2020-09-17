@@ -1,6 +1,7 @@
 import React from 'react';
 import profilePic from './img/profile-photo.jpg';
 import ToolkitIcons from './ToolkitIcons';
+import Toolkit from './Toolkit';
 import './About.css';
 
 function About() {
@@ -23,20 +24,7 @@ function About() {
       </div>
 
       <div className="px-5 py-5 teal-box text-center">
-        <div className="my-5">
-          <h3>TOOLKIT</h3>
-          <h5>
-            <b>
-              Javascript, React, Redux, Node/Express, Python, Flask, SQL, Postgres, NoSQL, MongoDB, AWS
-            </b>
-          </h5>
-          <h3 className="mt-5">ADDITIONAL SKILLS</h3>
-          <h5>
-            <b>
-              HTML5, CSS3, Photoshop, Illustrator, Figma, RESTful APIs, Git, Github
-          </b>
-          </h5>
-        </div>
+        <Toolkit />
         <ToolkitIcons />
       </div>
 
