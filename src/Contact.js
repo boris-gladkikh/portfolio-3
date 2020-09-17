@@ -11,27 +11,27 @@ function Contact() {
   return (
     <>
       <div className="blue-box text-center p-5">
-        <h2 className="pb-5">CONTACT</h2>
-        <div className="bio-text">
-          <h4 className="alata-font light-blue-text pb-2">
+        <h2 className="mb-5 alata-font">I'D LOVE TO HEAR FROM YOU.</h2>
+        <ContactForm />
+      </div>
+
+
+      <div className=" teal-box text-center  p-5 ">
+        <div className="">
+          <h4 className="alata-font text-white  pb-2 mb-5 ">
             I AM CURRENTLY LOOKING FOR NEW EMPLOYMENT OPPORTUNITIES.
           </h4>
-
-          <h6 className="text-white mb-4">Click on the icon below to download my resume.</h6>
-          <a href={resumeLink}>
-            <i className="text-white fa-4x far fa-file"></i>
-          </a>
-          <p className="mt-5">
+          <p className="mt-5 w-75 m-auto ">
             For inquiries, offers, collaborative endeavors, etc. please E-mail
             me, use the provided contact form, or find me at any of the social media links below.
       </p>
+
+          <h6 className="text-white mt-4 mb-4">Click on the icon below to download my resume.</h6>
+          <a href={resumeLink}>
+            <i className="text-white fa-4x far fa-file"></i>
+          </a>
         </div>
         <ContactIcons />
-      </div>
-      <div className="text-center text-white teal-box p-5 ">
-        <h2 className="mb-5 alata-font">I'D LOVE TO HEAR FROM YOU.</h2>
-        <ContactForm />
-
       </div>
     </>
   )

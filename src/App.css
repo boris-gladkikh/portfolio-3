@@ -1,5 +1,6 @@
 a {
   color:white;
+  transition: all 300ms;
 }
 
 a:hover {
@@ -41,6 +42,9 @@ h4,h5,h6 {
 
 }
 
+a i {
+  transition: all 300ms;
+}
 
 a i:hover{
   color:#0096c3 !important;
@@ -95,6 +99,10 @@ p {
 
 .light-blue-text {
   color: rgb(29, 183, 235);
+}
+
+.teal-text {
+  color: #2b768d;
 }
 
 .grey-font {

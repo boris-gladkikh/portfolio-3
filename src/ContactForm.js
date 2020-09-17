@@ -62,7 +62,7 @@ function ContactForm() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit} className="form-width m-auto">
+      <Form onSubmit={handleSubmit} className="pt-5 form-width m-auto">
 
         <Row>
           <Col sm="12" md="6">

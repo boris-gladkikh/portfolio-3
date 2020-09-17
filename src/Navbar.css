@@ -1,5 +1,6 @@
 nav a {
   color: white;
+  transition: all 300ms;
 }
 
 nav a:hover {
