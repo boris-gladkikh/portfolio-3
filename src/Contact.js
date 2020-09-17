@@ -5,7 +5,7 @@ import './Contact.css';
 
 
 function Contact() {
-  const resumeLink = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
+  // const resumeLink = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
 
 
   return (
