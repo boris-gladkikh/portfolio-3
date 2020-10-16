@@ -51,7 +51,7 @@ let projects = [
     frontend:"JS, HTML, CSS, JQuery, Jeopardy API",
     backend:"None",
     img:"/projects/jeopardy-app.jpg",
-    link:"https://jovial-raman-d2a58b.netlify.app/",
+    link:"https://jeopardy-raman-d2a58b.netlify.app/",
     github:"https://github.com/boris-gladkikh/jeopardy"
   }
 ]
