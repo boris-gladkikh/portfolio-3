@@ -9,7 +9,7 @@ let programsArray = [
   "Photoshop", "Illustrator",  "RESTful APIs", "Git"];
 
 let programList = programsArray.map(item => (
-<Col lg="3" md="6" sm="6" xs="6"><h5 className="alata-font p-2 toolkit-item">{item.toUpperCase()}</h5></Col>
+<Col key={item} lg="3" md="6" sm="6" xs="6"><h6 className="alata-font p-2 toolkit-item">{item.toUpperCase()}</h6></Col>
 ))
 
 function Toolkit() {
@@ -22,17 +22,7 @@ function Toolkit() {
         {programList}
 
       </Row>
-      {/* <h5>
-        <b>
-          Javascript, React, Redux, Node/Express, Python, Flask, SQL, Postgres, NoSQL, MongoDB, AWS
-            </b>
-      </h5>
-      <h3 className="mt-5">ADDITIONAL SKILLS</h3>
-      <h5>
-        <b>
-          HTML5, CSS3, Photoshop, Illustrator, Figma, RESTful APIs, Git, Github
-          </b>
-      </h5> */}
+
     </div>
 
   )

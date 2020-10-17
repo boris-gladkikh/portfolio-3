@@ -14,16 +14,16 @@ function About() {
         <div className="m-auto px-5 mb-5 bio-text">
           <h2 className="hello-text mt-5">HELLO! I'M BORIS.</h2>
 
-          <h3 className="mt-5 prompt-font text-white ">
+          <h4 className="mt-5 prompt-font text-white ">
             I am a Russian born, NY raised software engineer now residing on the west coast.<br />
-          </h3>
+          </h4>
           <h5 className="my-5 light-blue-text">
             I specialize in full stack development with an emphasis on front end design and optimization.
             </h5>
           <p className="m-auto px-2 bio-text text-white">
             My goal as a software engineer is to develop bold, elegant front end design, and a pleasant and
             intuitive user experience. I take pleasure from finding unique solutions to challenges, and from
-            seeing successful applications launched, deployed, and maintained. I strive to write code that is
+            seeing successful applications to completion, from conception to deployment. I strive to write code that is
             easy to read, performant, thoughtful and scalable. I feel comfortable working with client side
             front end code, as well as back end applications, databases and API’s.<br /><br /> I have worked on
             several freelance projects, including sites for electronic artists Gladkill and Satellite Respond.
