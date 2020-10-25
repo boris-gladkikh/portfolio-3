@@ -18,7 +18,7 @@ function Portfolio() {
       <Container className="m-auto mt-5">
         <Row>
           {projectList.map((p) => (
-            <Col key={p.title} lg="6" sm="12">
+            <Col key={p.title} xl="4" lg="6" sm="12">
               <Project project={p} />
             </Col>
           ))}
