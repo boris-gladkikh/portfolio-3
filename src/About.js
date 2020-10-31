@@ -7,6 +7,7 @@ import AboutColumns from "./AboutColumns";
 import AboutPicGrid from "./AboutPicGrid";
 
 function About() {
+
   return (
     <>
       <div className=" blue-box text-center text-white py-5">
