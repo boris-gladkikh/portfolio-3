@@ -11,7 +11,7 @@
 .bluer-box {
   min-height: 80vh;
   background-color: #171530;
-  color: #282828;
+  /* color: #282828; */
 
 }
 
@@ -38,10 +38,6 @@
   color: white;
 }
 
-.center-box {
-  position: relative;
-  top: 200px;
-}
 
 @media only screen and (max-width: 800px) {
   .bio-text {

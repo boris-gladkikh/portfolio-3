@@ -6,7 +6,8 @@
   align-items:center;
   background-color: #171530;
   padding: 20px;
-
+  overflow: hidden;
+  /* position: relative; */
 }
 
 .header {
@@ -30,42 +31,25 @@
 }
 
 
-@media only screen and (max-width:1200px) {
-  .header {
-    font-size:80px;
-  }
-  .sub-header {
-    font-size: 18px;
-    margin-top: -30px;
 
-  }
-}
-@media only screen and (max-width:600px) {
-  .header {
-    font-size:52px;
-  }
 
-  .sub-header {
-    font-size: 12px;
-    margin-top: -20px;
-  }
+
+.logo-area {
+  position: absolute;
+  z-index: 333;
 }
 
-.logo-box{
-  transform:rotateY(0deg);
-  transform-style: preserve-3d;
-  /* background-color:pink; */
-  padding: 5px;
-
+.bg-img {
+  filter: brightness(50%);
+  min-height: 100vh;
+  max-width: 200vw;
+  opacity: .25;
+  overflow:hidden;
 }
-
-/* .logo-box:hover .logo-content {
-  transition: transform 2000ms ease-in-out;
-  transform:rotateY(360deg);
-} */
 
 .mini-nav {
   margin-top: -10px;
+  color: white;
 
 }
 
@@ -87,76 +71,24 @@
 
 }
 
-/* .logo-container a.active:hover {
-  color: rgb(29, 183, 235) !important;
-} */
 
+@media only screen and (max-width:1200px) {
+  .header {
+    font-size:80px;
+  }
+  .sub-header {
+    font-size: 18px;
+    margin-top: -30px;
 
-#snowflake-btn {
-  border: none;
-  transition: .35s ease-in-out;
+  }
 }
+@media only screen and (max-width:600px) {
+  .header {
+    font-size:52px;
+  }
 
-#snowflake-btn:active i {
-  color: lightblue;
+  .sub-header {
+    font-size: 12px;
+    margin-top: -20px;
+  }
 }
-
-
-.snow-one{
-	background:url(/public/projects/snow.png);
-	background-repeat:repeat;
-	width: 70%;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
-  animation: animateOne 10s infinite linear;
-  /* transition: .35s ease-in; */
-  z-index: 2;
-  /* background-color:red; */
-
-} 
-
-.snow-two{
-	background:url(/public/projects/snow.png);
-	background-repeat:repeat;
-	width:100%;
-	height:100vh;
-	position:absolute;
-	top:0;
-	left:0;
-  animation:animateTwo 10s infinite linear;
-  /* transition: .35s ease-in; */
-  z-index:3;
-
-
-} 
-
-
-
-/* @keyframes animateOne
-{
-	0%
-	{
-		background-position: 0px 0px;
-	}
-
-	100%
-	{
-		background-position: 100px 650px;
-	} 
-}
-
-
-@keyframes animateTwo
-{
-	0%
-	{
-		background-position: 0px -100px;
-	}
-
-	100%
-	{
-		background-position: 0px 650px;
-	}
-} */

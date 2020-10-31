@@ -1,0 +1,24 @@
+.image {
+max-width: 400px; 
+border-radius: 5px;
+}
+
+.img-div {
+  padding-top: 2rem;
+  overflow:hidden;
+  
+}
+
+.thing-two {
+  padding: 0;
+  border: 1px solid yellow;
+}
+.about-grid-container {
+  padding-top:4rem;
+  width: 85%;
+  margin: auto;
+}
+
+.about-grid-container p {
+  padding: 0;
+}
