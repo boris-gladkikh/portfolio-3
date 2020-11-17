@@ -1,0 +1,61 @@
+.grid-container {
+  margin: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  transition: 500ms all;
+
+  
+
+}
+.grid-item {
+  width: 100%;
+  transition: 500ms all;
+  overflow: hidden;
+  height: 200px;
+  overflow:hidden;
+
+}
+
+.grid-item:hover {
+  border: 1px solid white;
+  cursor: pointer;
+  filter:brightness(70%);
+}
+
+/* Media queries for grid */
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    
+  }
+}
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+
+    
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    height:max-content;
+  }
+}
+
+
+/* modal styling for design grid item */
+
+
+.design-modal {
+  width: fit-content;
+  height: auto;
+}
