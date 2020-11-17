@@ -60,7 +60,7 @@ let projects = [
     frontend:"React, Redux, CSS, Bootstrap",
     backend:"None yet",
     img:"/projects/flowstate-site.jpg",
-    link:"https://borisgladkikh.com/",
+    link:"https://flowstate-boards-c51566.netlify.app/",
     github:"https://github.com/boris-gladkikh/boardshop"
   },
   {
