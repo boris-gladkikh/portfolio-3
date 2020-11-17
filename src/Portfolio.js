@@ -4,7 +4,7 @@ import Project from "./Project";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import ProjectContainer from './ProjectContainer';
+// import ProjectContainer from './ProjectContainer';
 
 //displays portfolio page with grid of project components
 
