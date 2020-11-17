@@ -11,7 +11,7 @@ function Homepage() {
           <div className="logo-content">
             <p className=" header righteous-font">BORIS GLADKIKH</p>
             <p className=" alata-font sub-header">
-              FULL STACK SOFTWARE ENGINEER
+              SOFTWARE ENGINEER
             </p>
           </div>
         </div>

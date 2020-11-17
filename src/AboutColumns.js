@@ -23,7 +23,7 @@ function AboutColumns() {
           include sites for electronic artist Gladkill and printing and
           installation company Bay Area Graphic Solutions. You can see more
           projects <NavLink to="/portfolio">here</NavLink>. I also completed an internship 
-          with Livestack.io. I am now seeking the next step in my
+          with event monetization start-up Livestack. I am now seeking the next step in my
           development journey and I am actively pursuing employment
           opportunities.
         </p>

@@ -17,8 +17,7 @@ function AboutPicGrid() {
             and loving food of all kinds, riding my skateboard, hiking and
             spending time in nature, reading sci-fi, futurism and horror,
             playing games (videogames, tabletop, and board games), watching
-            cinema and shows (let's talk about Watchmen!) and hanging out with
-            my cat & dog.
+            cinema and shows and hanging out with my cat & dog.
           </p>
         </div>
         <div className="img-div">
