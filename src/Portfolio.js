@@ -1,7 +1,7 @@
 import React from "react";
 import projectList from "./projectList";
 import ProjectContainer from "./ProjectContainer";
-// import DesignGrid from "./DesignGrid";
+import DesignGrid from "./DesignGrid";
 
 //displays portfolio page with grid of project components
 
@@ -21,7 +21,7 @@ function Portfolio() {
       <h6 className="pb-5 light-blue-text">Click on an image for more info.</h6>
       <ProjectContainer title="FREELANCE" projectArray={freelance} />
       <ProjectContainer title="PERSONAL" projectArray={personal} />
-      {/* <DesignGrid /> */}
+      <DesignGrid />
       
       
     </div>

@@ -2,9 +2,8 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Toolkit.css';
-import {NavLink} from 'react-router-dom';
 const resumeLink = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
-const resumeLonk = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
+// const resumeLonk = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
 
 let programsArray = [
   "Javascript", "React", "Redux", "Node",  "ExpressJS",

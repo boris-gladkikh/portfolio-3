@@ -1,5 +1,6 @@
 .grid-container {
   margin: auto;
+  margin-bottom: 10%;
 }
 
 .grid {
@@ -7,17 +8,14 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 5px;
   transition: 500ms all;
-
-  
-
 }
+
 .grid-item {
   width: 100%;
   transition: 500ms all;
   overflow: hidden;
   height: 200px;
   overflow:hidden;
-
 }
 
 .grid-item:hover {
@@ -26,20 +24,20 @@
   filter:brightness(70%);
 }
 
+.grid-item:active {
+  border: 10px solid white;
+}
+
 /* Media queries for grid */
 
 @media screen and (max-width: 1200px) {
   .grid {
-    grid-template-columns: 1fr 1fr 1fr;
-
-    
+    grid-template-columns: 1fr 1fr 1fr;  
   }
 }
 @media screen and (max-width: 1000px) {
   .grid {
     grid-template-columns: 1fr 1fr;
-
-    
   }
 }
 @media screen and (max-width: 800px) {
@@ -54,8 +52,72 @@
 
 /* modal styling for design grid item */
 
-
 .design-modal {
   width: fit-content;
+  position:fixed;
+  cursor:pointer;
+  z-index: 33;
+  left: 0;
+  top: 10%;
+  right:0;
+  margin-left:auto;
+  margin-right: auto;
+  transition: 300ms all;
+  display: grid;
+}
+
+.design-modal:hover .modal-detail {
+  opacity: .75;
+}
+
+.modal-detail{
+  position: absolute;
+  background:white;
+  color:black;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  /* width: fit-content; */
+  display:grid;
+  opacity: 0;
+  transition: 300ms all;
+  align-self: center;
+  justify-self: center;
+}
+
+.modal-detail p {
+  justify-self: center;
+  align-self: center;
+  padding: 1px 35px 1px 35px;
+
+}
+
+.modal-image {
+  max-width: 500px;
   height: auto;
+  margin:auto;
+}
+
+.design-modal button {
+  border-radius: 50px;
+  border: 1px solid red;
+  background-color:transparent;
+  padding:0px 4px 0px 4px;
+  margin-left:auto;
+  margin-right: auto;
+  right: 12px;
+  top:7px;
+  color: red;
+  z-index: 44;
+  position:absolute;
+}
+
+.design-modal button:hover {
+  color:cyan;
+  border: 1px solid cyan;
+}
+
+.hidden {
+  display: none;
+  transition: 300ms all;
 }
