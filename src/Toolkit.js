@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import './Toolkit.css';
 import {NavLink} from 'react-router-dom';
 const resumeLink = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
-
+const resumeLonk = "https://github.com/boris-gladkikh/updatedportfolio/raw/master/Boris%20Gladkikh%202020%20Resume.pdf";
 
 let programsArray = [
   "Javascript", "React", "Redux", "Node",  "ExpressJS",
@@ -26,7 +26,7 @@ function Toolkit() {
 
       </Row>
 
-      <NavLink id="toolkit-link" to={resumeLink}><h4>DOWNLOAD RESUME</h4></NavLink>
+      <a id="toolkit-link" href={resumeLink}><h4>DOWNLOAD RESUME</h4></a>
 
 
     </div>
