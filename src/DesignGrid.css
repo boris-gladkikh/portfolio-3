@@ -28,28 +28,6 @@
   border: 10px solid white;
 }
 
-/* Media queries for grid */
-
-@media screen and (max-width: 1200px) {
-  .grid {
-    grid-template-columns: 1fr 1fr 1fr;  
-  }
-}
-@media screen and (max-width: 1000px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 800px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .grid-item {
-    height:max-content;
-  }
-}
-
-
 /* modal styling for design grid item */
 
 .design-modal {
@@ -67,7 +45,7 @@
 }
 
 .design-modal:hover .modal-detail {
-  opacity: .75;
+  opacity: .85;
 }
 
 .modal-detail{
@@ -110,14 +88,55 @@
   color: red;
   z-index: 44;
   position:absolute;
+  transform:scale(1);
 }
 
 .design-modal button:hover {
-  color:cyan;
-  border: 1px solid cyan;
+  color:magenta;
+  border: 1px solid magenta;
+  transform: scale(1.5);
 }
 
 .hidden {
   display: none;
   transition: 300ms all;
+}
+
+
+/* Media queries for grid */
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;  
+  }
+  .modal-image {
+    max-width: 300px;
+    height: auto;
+    margin:auto;
+  }
+
+}
+@media screen and (max-width: 1000px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modal-detail {
+    opacity:.85;
+    top:100%;
+    padding: 5px;
+    width: fit-content;
+    height: auto;
+  }
+
+  .modal-detail p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    height:max-content;
+  }
 }
