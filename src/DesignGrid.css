@@ -92,8 +92,8 @@
 }
 
 .design-modal button:hover {
-  color:magenta;
-  border: 1px solid magenta;
+  color:black;
+  border: 1px solid black;
   transform: scale(1.5);
 }
 
