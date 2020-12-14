@@ -7,16 +7,13 @@ import './Navbar.css'
 function NavBar() {
   return (
     <div>
-      <Navbar expand="lg"  variant="dark" className=" bg-color justify-content-end" >
+      <Navbar expand="lg"  variant="dark" className="justify-content-end" id="nav-style" >
         <Navbar.Toggle aria-controls="navigation"/>
         <Navbar.Collapse id="navigation" className="text-center justify-content-end">
         <Nav style={{fontSize:"18px"}}className=" alata-font text-white ">
           <Nav.Item>
           <NavLink className="px-1" exact to="/">HOME</NavLink>
           </Nav.Item>
-          {/* <Nav.Item>
-          <NavLink className="px-1" to="/about">ABOUT</NavLink>       
-          </Nav.Item> */}
           <Nav.Item>
           <NavLink className="px-1" to="/portfolio">PORTFOLIO</NavLink>
           </Nav.Item>

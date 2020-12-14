@@ -16,3 +16,11 @@ nav a.active {
 nav a.active:hover {
   color: rgb(29, 183, 235) !important;
 }
+
+#nav-style {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #171530;
+  z-index: 555;
+}
