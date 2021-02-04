@@ -6,6 +6,8 @@ border-radius: 5px;
 .img-div {
   padding-top: 2rem;
   overflow:hidden;
+  height: 400px;
+  object-fit: cover;
   
 }
 

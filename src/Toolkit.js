@@ -6,8 +6,8 @@ const resumeLink = "https://github.com/boris-gladkikh/portfolio-3/raw/master/Bor
 
 let programsArray = [
   "Javascript", "React", "Redux", "Node",  "ExpressJS",
-  "HTML", "CSS", "Python", "Flask", "PostgreSQL", "MongoDB", "Figma",
-  "Photoshop", "Illustrator",  "RESTful APIs", "Git"];
+  "HTML", "CSS", "Python", "Flask", "PostgreSQL", "MySQL", "Sequelize", "MongoDB", "Figma",
+  "Photoshop", "Illustrator", "Jasmine", "Jest", "Supertest", "React Testing Library",   "RESTful APIs", "Git", "jira", "Sentry"];
 
 let programList = programsArray.map(item => (
 <Col key={item} lg="3" md="6" sm="6" xs="6"><h6 className="alata-font p-2 toolkit-item">{item.toUpperCase()}</h6></Col>
