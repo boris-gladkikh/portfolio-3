@@ -19,7 +19,7 @@ function Contact() {
       <div className=" teal-box text-center  p-5 ">
         <div className="">
           <h4 className="alata-font text-white mt-5  pb-2 mb-5 ">
-            I AM CURRENTLY LOOKING FOR NEW EMPLOYMENT OPPORTUNITIES.
+            DON'T HESITATE TO REACH OUT.
           </h4>
           <p className="mt-5 pt-2 w-75 m-auto ">
             <strong>
