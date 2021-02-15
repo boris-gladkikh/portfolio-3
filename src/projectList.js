@@ -6,7 +6,7 @@ let projects = [
     frontend:"React, Bootstrap, CSS",
     backend:"Netlify for contact management and hosting, no conventional backend",
     img:"/projects/bags-site.jpg",
-    link:"",
+    link:"https://bagraphicsolutions.com/",
     github:"https://github.com/boris-gladkikh/bags-site"
   },
   
