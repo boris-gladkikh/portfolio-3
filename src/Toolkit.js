@@ -2,7 +2,7 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './Toolkit.css';
-const resumeLink = "https://github.com/boris-gladkikh/portfolio-3/raw/master/Boris%20Gladkikh%20Front%20End%20Engineer%20Resume.pdf";
+const resumeLink = "https://github.com/boris-gladkikh/portfolio-3/blob/master/Boris%20Gladkikh%20June%202021%20Resume.pdf";
 
 let programsArray = [
   "Javascript", "React", "Redux", "Node",  "ExpressJS",
