@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 function AboutColumns() {
   return (
-    <div className="about-container pt=$">
+    <div className="about-container pt=4">
       <div className="item-1">
         <h3 className="text-center">WHO I AM</h3>
         <p>

@@ -33,9 +33,9 @@
 
 
 .bio-text, .bio-text-2 {
-  width: 85%;
-  margin: auto;
+
   color: white;
+  padding: 1rem;
 }
 
 

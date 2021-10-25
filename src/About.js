@@ -29,13 +29,13 @@ function About() {
         </div>
       </div>
 
-      <div className="px-5 py-5 teal-box text-center">
+      <div className="px-4 py-5 teal-box text-center">
         <Toolkit />
         <ToolkitIcons />
       </div>
 
       <div className="bluer-box text-center">
-        <div className="py-4 pb-5">
+        <div className="py-4 ">
           <AboutPicGrid />
         </div>
       </div>
