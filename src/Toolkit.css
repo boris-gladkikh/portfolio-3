@@ -1,3 +1,8 @@
+.toolkit {
+  display: flex;
+  padding: 1rem;
+}
+
 .toolkit-item {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -14,12 +19,6 @@
   cursor: crosshair;
 }
 
-@media only screen and (max-width: 700px) {
-
- .toolkit-item {
-   font-size: 14px;
-  }
-}
 
 #toolkit-link  {
   color: white;
@@ -30,5 +29,15 @@
 #toolkit-link:hover {
   text-decoration: none;
   color:#171530;
+  
+}
+@media only screen and (max-width: 700px) {
 
+ .toolkit-item {
+   font-size: 14px;
+  }
+
+  .toolkit-item:hover {
+
+  }
 }

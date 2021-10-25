@@ -20,7 +20,7 @@ function AboutPicGrid() {
           shows and hanging out with my cat & dog.
         </p>
       </div>
-      <Row >
+      <Row className="px-4" >
         <Col xl={3} lg={4} md={6} sm={12}>
           <div className="img-div">
             <img className="image" alt="boris headshot" src={headshot}></img>

@@ -7,14 +7,13 @@ import AboutColumns from "./AboutColumns";
 import AboutPicGrid from "./AboutPicGrid";
 
 function About() {
-
   return (
     <>
       <div className=" blue-box text-center text-white py-5">
         <div className="pt-5 text-center">
           <img src={profilePic} alt="Boris pic" className=" profile-pic" />
         </div>
-        <div className="m-auto px-5 mb-5 bio-text">
+        <div className="m-auto px-4 mb-5 bio-text">
           <h2 className="hello-text mt-5">HELLO! I'M BORIS.</h2>
 
           <h4 className="mt-5 prompt-font text-white ">
@@ -30,14 +29,13 @@ function About() {
         </div>
       </div>
 
-      <div className="px-5 py-5 teal-box text-center">
+      <div className="px-4 py-5 teal-box text-center">
         <Toolkit />
         <ToolkitIcons />
       </div>
 
       <div className="bluer-box text-center">
-        
-        <div className="py-4 pb-5">
+        <div className="py-4 ">
           <AboutPicGrid />
         </div>
       </div>
