@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 
 function AboutColumns() {
   return (
-    <div className="about-container">
-      <div className="item-1  text-left">
+    <div className="about-container pt=$">
+      <div className="item-1">
         <h3 className="text-center">WHO I AM</h3>
         <p>
           My goal as a software engineer is to write code that is scalable,
@@ -16,7 +16,7 @@ function AboutColumns() {
           back end applications, databases and API’s.
         </p>
       </div>
-      <div className="item-2 text-left">
+      <div className="item-2 ">
         <h3 className="text-center">WHAT I DO</h3>
         <p>
           I am currently working as a full stack engineer with Health Data

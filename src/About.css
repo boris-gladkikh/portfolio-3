@@ -42,6 +42,7 @@
 @media only screen and (max-width: 800px) {
   .bio-text {
     width:100%;
+    text-align: left;
   }
 
 }
