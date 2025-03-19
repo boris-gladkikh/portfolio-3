@@ -4,82 +4,36 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color: #171530;
+  background-color: black;
   padding: 20px;
   overflow: hidden;
-  /* position: relative; */
+  line-height: 1;
+  color:white;
 }
 
 .header {
-  font-size: 120px;
-  background-image: url(https://media.giphy.com/media/BDucPOizdZ5AI/giphy.gif);
-  background-size: contain;
-  color: transparent;
+  font-size: 200px;
   text-transform: uppercase;
-  margin: 10px 0;
-  background-clip: text;
-  -moz-background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: .5px white;
-  padding: 50px  50px 0px 50px;
-}
+ }
 
-.sub-header {
-  font-size: 42px;
-  color:#BFBFBF;
-  margin-top: -50px;
-}
+ .sub-header {
+  width: 100%;
+ }
+
+ .boris-img {
+  height: 200px;
+  width: auto;
+  border-radius: 100%;
+ }
 
 
 
-
-
-.logo-area {
-  position: absolute;
-  z-index: 333;
-}
-
-.bg-img {
-  filter: brightness(50%);
-  min-height: 100vh;
-  max-width: 200vw;
-  opacity: .25;
-  overflow:hidden;
-}
-
-.mini-nav {
-  margin-top: -10px;
-  color: white;
-
-}
-
- .logo-container a {
-  color: #BFBFBF;
-  margin-left: 2px;
-  margin-right: 2px;
-  transition: all 300ms;
-
-}
-
-.logo-container a:hover {
-  color: rgb(29, 183, 235);
-  text-decoration: none;
-}
-.logo-container a.active {
-  font-weight: bold;
-  color: #2b768d;
-
-}
-
-
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:1000px) {
   .header {
     font-size:80px;
   }
   .sub-header {
     font-size: 18px;
-    margin-top: -30px;
-
   }
 }
 @media only screen and (max-width:600px) {

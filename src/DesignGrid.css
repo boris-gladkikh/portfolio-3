@@ -11,10 +11,11 @@
 }
 
 .grid-item {
-  width: 100%;
+  /* width: 100%; */
   transition: 500ms all;
   overflow: hidden;
-  height: 200px;
+  height: 350px;
+  aspect-ratio: 1/1;
   overflow:hidden;
 }
 
