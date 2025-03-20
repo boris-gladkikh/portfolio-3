@@ -59,8 +59,33 @@ p {
 
 }
 
+/* COMMON CLASSES */
+
 .page-header {
   font-size: 80px;
+  line-height: 1;
+}
+
+.close-btn {
+  border: 2px solid red;
+  background-color:#f1f1f1;
+  top: 8px;
+  right: 8px;
+  padding: 2px;
+  color: red;
+  z-index: 44;
+  position:absolute;
+  transition: 300ms all;
+  cursor: pointer;
+
+}
+
+
+.close-btn:hover {
+  border: 2px solid #f1f1f1;
+  color: #f1f1f1;
+  background-color: red;
+  
 }
 
 /* FONTS */

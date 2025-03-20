@@ -5,7 +5,7 @@ function Homepage() {
   return (
     <>
       <div className="logo-container">
-        <div className=" header righteous-font">BORIS GLADKIKH.</div>
+        <div className=" header">BORIS GLADKIKH.</div>
         <div className="sub-header">
           I am a software developer / electronic musician / A/V artist residing
           in Portland, OR.

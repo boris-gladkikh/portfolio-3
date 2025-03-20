@@ -13,9 +13,6 @@ function ContactIcons() {
         <a href="https://www.linkedin.com/in/boris-gladkikh/" rel="noopener noreferrer" target="_blank">
           <i className="fa-2x fab fa-linkedin-in mx-2 text-white" />
         </a>
-        <a href="https://twitter.com/borisisntreal" rel="noopener noreferrer" target="_blank">
-          <i className="fa-2x fab fa-twitter mx-2 text-white "></i>
-        </a>
         <a href="https://www.facebook.com/borisgladkill" rel="noopener noreferrer" target="_blank">
           <i className="fa-2x fab fa-facebook mx-2 text-white "></i>
         </a>
