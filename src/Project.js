@@ -23,9 +23,9 @@ function Project({ project }) {
               alt={`pic of ${project.title}`}
               className="m-0 modal-pic"
             />
-            <h2 className="text-center m-1">{project.title.toUpperCase()}</h2>
+            <h2 className="text-center mt-3">{project.title.toUpperCase()}</h2>
 
-            <p className="text-white my-5">{project.description}</p>
+            <p className="my-5">{project.description}</p>
             <div className="text-center">
               <a target="_blank" rel="noopener noreferrer" href={project.link}>Link</a>
             </div>
@@ -36,7 +36,6 @@ function Project({ project }) {
       <h6>{project.title}</h6>
       <div onClick={handleShow} className="project-pic">
         <img
-          style={{ maxWidth: "100%" }}
           src={project.img}
           alt={`pic of ${project.title}`}
         />

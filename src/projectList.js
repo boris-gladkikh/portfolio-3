@@ -2,7 +2,7 @@ let projects = [
   {
     type:"freelance",
     title:"Bay Area Graphic Solutions",
-    description:"Company site for Bay Area Graphic Solutions, an installation, design and  printing business. Responsive, mobile first single page application created with React, Bootstrap, and custom CSS. Some highlights from this project are the clean, contemporary design, a pleasant and intuitive layout, contact form with client-side validation, a dynamic and responsive projects grid, and effective SEO. LINK COMING SOON!",
+    description:"Company site for Bay Area Graphic Solutions - an installation, design and printing business. Responsive, mobile first single page application created with React, Bootstrap/custom CSS.",
     frontend:"React, Bootstrap, CSS",
     backend:"Netlify for contact management and hosting, no conventional backend",
     img:"/projects/bags-site.jpg",

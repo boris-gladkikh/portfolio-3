@@ -10,7 +10,7 @@ function Contact() {
 
   return (
     <>
-      <div className="p-5">
+      <div className="app p-5">
         <div className="page-header">CONTACT.</div>
         <div>Fill out this form for all your inquiries.</div>
         <ContactForm />

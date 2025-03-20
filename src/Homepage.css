@@ -4,11 +4,17 @@
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  background-color: black;
   padding: 20px;
   overflow: hidden;
   line-height: 1;
-  color:white;
+  background-color: black;
+  color: white;
+}
+
+
+.logo-container img {
+width: 100vw;
+height: auto;
 }
 
 .header {
@@ -20,13 +26,6 @@
  .sub-header {
   width: 100%;
  }
-
- .boris-img {
-  height: 200px;
-  width: auto;
-  border-radius: 100%;
- }
-
 
 
 @media only screen and (max-width:1000px) {
