@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState, useCallback } from "react";
 import "./TriangleGrid.css";
 
-// Utility: Point-in-triangle check
+// Utility: point inside triangle
 const isPointInTriangle = (px, py, ax, ay, bx, by, cx, cy) => {
   const area = 0.5 * (-by * cx + ay * (-bx + cx) + ax * (by - cy) + bx * cy);
   const s = (1 / (2 * area)) * (ay * cx - ax * cy + (cy - ay) * px + (ax - cx) * py);
@@ -17,6 +17,7 @@ const TriangleGrid = () => {
   const [mousePos, setMousePos] = useState({ x: -9999, y: -9999 });
   const [trailPos, setTrailPos] = useState({ x: -9999, y: -9999 });
   const [lockedTriangle, setLockedTriangle] = useState(null);
+  const [sigilTriangle, setSigilTriangle] = useState(null);
   const [exploding, setExploding] = useState(false);
 
   const [dimensions, setDimensions] = useState({
@@ -26,7 +27,7 @@ const TriangleGrid = () => {
 
   const requestRef = useRef();
 
-  // Smooth trail
+  // Smooth mouse trail effect
   const animateTrail = useCallback(() => {
     setTrailPos((prev) => ({
       x: prev.x + (mousePos.x - prev.x) * 0.1,
@@ -60,11 +61,15 @@ const TriangleGrid = () => {
       c: { x: trailPos.x + base / 2, y: trailPos.y + height },
     };
     setLockedTriangle(locked);
+    setSigilTriangle(locked);
     setExploding(true);
 
     setTimeout(() => {
       setLockedTriangle(null);
       setExploding(false);
+
+      // Optional: fade sigil after 4s
+      setTimeout(() => setSigilTriangle(null), 4000);
     }, 2500);
   };
 
@@ -74,6 +79,20 @@ const TriangleGrid = () => {
   return (
     <div className="top-container">
     <div className="triangle-grid" onClick={handleClick}>
+      {/* Sigil triangle after explosion */}
+      {sigilTriangle && (
+        <div
+          className="sigil"
+          style={{
+            clipPath: `polygon(
+              ${sigilTriangle.a.x}px ${sigilTriangle.a.y}px,
+              ${sigilTriangle.b.x}px ${sigilTriangle.b.y}px,
+              ${sigilTriangle.c.x}px ${sigilTriangle.c.y}px
+            )`,
+          }}
+        />
+      )}
+
       {Array.from({ length: rows * cols }).map((_, i) => {
         const row = Math.floor(i / cols);
         const col = i % cols;
@@ -83,7 +102,7 @@ const TriangleGrid = () => {
         const centerX = left;
         const centerY = top;
 
-        // Activation triangle params
+        // Define current activation triangle (live trail)
         const base = 600;
         const height = 500;
         const a = { x: trailPos.x, y: trailPos.y };

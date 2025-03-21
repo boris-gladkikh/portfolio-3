@@ -16,6 +16,8 @@ function Homepage() {
         <NavLink className="project-link" exact to="/001">001</NavLink>
         /
         <NavLink className="project-link" exact to="/002">002</NavLink>
+        /
+        <NavLink className="project-link" exact to="/003">003</NavLink>
 
 
         </div>

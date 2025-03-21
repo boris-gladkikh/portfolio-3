@@ -1,0 +1,47 @@
+.top-cont {
+  margin: 0;
+  padding: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.rain-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+.rain-line {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+}
+
+.segment {
+  position: absolute;
+  width: 1px;
+  height: 40px;
+  background-color: white;
+  opacity: 0.8;
+  animation: fallSegment 3s linear infinite;
+  transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.segment.red {
+  background-color: red;
+  opacity: 1;
+}
+
+@keyframes fallSegment {
+  0% {
+    transform: translateY(-150%);
+  }
+  100% {
+    transform: translateY(150%);
+  }
+}

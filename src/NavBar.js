@@ -7,7 +7,7 @@ import './Navbar.css'
 function NavBar() {
   return (
     <div>
-      <Navbar expand="lg"  variant="dark" className="justify-content-end" id="nav-style" >
+      {/* <Navbar expand="lg"  variant="dark" className="justify-content-end" id="nav-style" >
         <Navbar.Toggle aria-controls="navigation"/>
         <Navbar.Collapse id="navigation" className="text-center justify-content-end">
         <Nav style={{fontSize:"18px"}}className=" alata-font text-white ">
@@ -22,6 +22,14 @@ function NavBar() {
           </Nav.Item>
         </Nav>
         </Navbar.Collapse>
+      </Navbar> */}
+      <Navbar expand="lg"  variant="dark" className="justify-content-start" id="nav-style" >
+        <Navbar.Toggle aria-controls="navigation"/>
+        <Nav style={{fontSize:"18px"}}className=" alata-font text-white ">
+          <Nav.Item>
+          <NavLink className="px-1" exact to="/">HOME</NavLink>
+          </Nav.Item>
+        </Nav>
       </Navbar>
 
     </div>

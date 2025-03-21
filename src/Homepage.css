@@ -36,6 +36,7 @@ height: auto;
 
  .project-link {
   color: white !important;
+  padding: 5px;
  }
 
  .project-link:hover {

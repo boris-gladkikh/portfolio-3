@@ -1,54 +1,3 @@
-/* .top-container {
-  margin: 0;
-  padding: 0;
-  background: black;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-.triangle-grid {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.triangle {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-  border-bottom: 21px solid white;
-  transition: border-bottom-color 0.3s ease;
-  transform: rotate(0deg);
-  transform-origin: center;
-}
-
-.triangle.active {
-  border-bottom-color: red;
-}
-
-.triangle.rotate {
-  animation: spin 0.6s ease-in-out;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-.triangle.ripple {
-  animation: ripple 2.2s ease-in-out infinite;
-}
-
-@keyframes ripple {
-  0%   { transform: scale(1) rotate(0deg); opacity: 1; }
-  50%  { transform: scale(1.05) rotate(0deg); opacity: 0.85; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
-} */
-
-
 .top-container {
   margin: 0;
   padding: 0;
@@ -63,6 +12,7 @@
   width: 100vw;
   height: 100vh;
   cursor: crosshair;
+  margin-top: 50px;
 }
 
 .triangle {
@@ -72,7 +22,7 @@
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
   border-bottom: 21px solid white;
-  transition: border-bottom-color 0.3s ease;
+  transition: all 0.3s ease;
   transform: rotate(0deg);
   transform-origin: center;
 }
@@ -95,12 +45,10 @@
 }
 
 @keyframes ripple {
-  0%   { transform: scale(1) rotate(0deg); opacity: 1; }
-  50%  { transform: scale(1.05) rotate(0deg); opacity: 0.85; }
-  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  50% { transform: scale(1.05) rotate(0deg); opacity: 0.85; }
 }
 
-/* Exploding triangles */
 .triangle.explode {
   border-bottom-color: red;
   animation: explode 0.5s forwards ease-out;
@@ -120,12 +68,27 @@
   }
 }
 
-/* Dim the rest of the grid during explosion */
 .triangle.faded {
   opacity: 0.3;
 }
 
-/* Cross (plus sign) */
+/* Transform to circle */
+.shape-circle {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transform: scale(1);
+  animation: dimRipple 2s infinite ease-in-out;
+}
+
+@keyframes dimRipple {
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50% { transform: scale(1.05); opacity: 0.4; }
+}
+
+/* Transform to plus sign */
 .shape-cross {
   border: none;
   width: 20px;
@@ -157,19 +120,20 @@
   transform: translateX(-50%);
 }
 
-/* Circle */
-.shape-circle {
-  border: none;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  transform: scale(1);
-  animation: dimRipple 2s infinite ease-in-out;
+/* Sigil triangle left behind */
+.sigil {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 0, 0, 0.08);
+  pointer-events: none;
+  z-index: 0;
+  animation: sigilPulse 2.5s ease-in-out infinite;
+  clip-path: polygon(0 0, 0 0, 0 0);
 }
 
-/* Optional pulse for circles */
-@keyframes dimRipple {
-  0%, 100% { transform: scale(1); opacity: 0.25; }
-  50% { transform: scale(1.05); opacity: 0.4; }
+@keyframes sigilPulse {
+  0% { opacity: 0.04; }
+  50% { opacity: 0.1; }
+  100% { opacity: 0.04; }
 }

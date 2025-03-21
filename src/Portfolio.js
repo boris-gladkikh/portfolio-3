@@ -1,6 +1,6 @@
 import React from "react";
 import projectList from "./projectList";
-import ProjectContainer from "./ProjectContainer";
+import Project from "./Project";
 import DesignGrid from "./DesignGrid";
 
 
@@ -16,8 +16,12 @@ function Portfolio() {
         Examples of my freelance and design work.
       </div>
       <div className="mb-5">
-      <ProjectContainer title="FREELANCE" projectArray={freelance} />
+      <h2 className="mb-5">FREELANCE</h2>
+      {freelance.map((p) => (
+          <Project project={p} />
+      ))}
       </div>
+      <h2 className="mb-5">DESIGN</h2>
       <DesignGrid />
       
       
