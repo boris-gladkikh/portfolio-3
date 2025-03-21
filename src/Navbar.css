@@ -9,7 +9,7 @@ nav a:hover {
 }
 nav a.active {
   font-weight: bold;
-  color: #2b768d;
+  color: tomato;
 
 }
 
@@ -21,6 +21,6 @@ nav a.active:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #171530;
+  background-color: black;
   z-index: 555;
 }

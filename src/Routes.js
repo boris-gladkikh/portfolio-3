@@ -5,7 +5,6 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Homepage from './Homepage';
-// import Footer from './Footer';
 
 function Routes() {
   return (

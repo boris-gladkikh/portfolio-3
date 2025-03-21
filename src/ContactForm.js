@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import { postEmail } from './APIHelper';
 import './ContactForm.css';
 
@@ -15,8 +13,6 @@ function ContactForm() {
   let [submitMsg, setSubmitMsg] = useState("");
   let [msgClass, setMsgClass] = useState("pos");
   let [isSubmitting, setIsSubmitting] = useState(false);
-
-  //uses API call to post email to server, setting submit msg. if error occurs, neg submit msg is set.
 
   useEffect(function handleFomSubmit() {
 
@@ -62,23 +58,18 @@ function ContactForm() {
 
   return (
     <>
-      <Form onSubmit={handleSubmit} className="pt-5 text-white form-style m-auto">
+      <Form onSubmit={handleSubmit} className="pt-5 text-white form-style">
 
-        <Row>
-          <Col sm="12" md="6">
-            <Form.Group>
-              <Form.Label htmlFor="name">Name</Form.Label>
-              <Form.Control required onChange={handleChange} name="name" type="text" placeholder="Ex: Korben Dallas"></Form.Control>
-            </Form.Group>
-          </Col>
-          <Col sm="12" md="6">
-            <Form.Group>
-              <Form.Label htmlFor="email">Email</Form.Label>
-              <Form.Control required onChange={handleChange} name="email" type="text" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
-              <Form.Text>I will never share your Email address with anyone else.</Form.Text>
-            </Form.Group>
-          </Col>
-        </Row>
+        <Form.Group>
+          <Form.Label htmlFor="name">Name</Form.Label>
+          <Form.Control required onChange={handleChange} name="name" type="text" placeholder="Ex: Korben Dallas"></Form.Control>
+        </Form.Group>
+
+        <Form.Group>
+          <Form.Label htmlFor="email">Email</Form.Label>
+          <Form.Control required onChange={handleChange} name="email" type="text" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
+          <Form.Text>I will never share your Email address with anyone else.</Form.Text>
+        </Form.Group>
 
         <Form.Group>
               <Form.Label htmlFor="subject">Subject</Form.Label>

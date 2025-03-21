@@ -14,9 +14,10 @@ function DesignItemAndModal({ design }) {
   return (
     <>
       <div onClick={handleHide} className={`design-modal ${modalView} `}>
-        <div className="modal-detail"><p>{design.detail}</p></div>
-        <img className="modal-image" src={design.img} alt={design.name}></img>
-        <button onClick={handleHide}>X</button>
+        <img title={design.detail} className="modal-image" src={design.img} alt={design.name}></img>
+        <div onClick={handleHide} className="close-btn">
+          close
+        </div>
       </div>
 
       <div onClick={handleShow} key={design.title} className="grid-item">
