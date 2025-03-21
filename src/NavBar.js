@@ -24,7 +24,7 @@ function NavBar() {
         </Navbar.Collapse>
       </Navbar> */}
       <Navbar expand="lg"  variant="dark" className="justify-content-start" id="nav-style" >
-        <Navbar.Toggle aria-controls="navigation"/>
+        {/* <Navbar.Toggle aria-controls="navigation"/> */}
         <Nav style={{fontSize:"18px"}}className=" alata-font text-white ">
           <Nav.Item>
           <NavLink className="px-1" exact to="/">HOME</NavLink>
