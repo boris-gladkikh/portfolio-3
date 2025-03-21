@@ -8,6 +8,7 @@ import Homepage from './Homepage';
 import GridRepel from './projects/002/GridRepel';
 import TriangleGrid from './projects/003/TriangleGrid';
 import RainLines from './projects/004/RainLines';
+import DiamondSquares from './projects/005/DiamondSquares';
 
 function Routes() {
   return (
@@ -28,6 +29,9 @@ function Routes() {
     </Route>
     <Route exact path="/003">
     <RainLines/>
+    </Route>
+    <Route exact path="/004">
+    <DiamondSquares/>
     </Route>
 
     <Route exact path="/contact">
