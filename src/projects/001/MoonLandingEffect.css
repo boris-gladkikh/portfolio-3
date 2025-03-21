@@ -1,4 +1,4 @@
-body {
+/* body {
   margin: 0;
   height: 100vh;
   display: flex;
@@ -6,7 +6,7 @@ body {
   justify-content: center;
   background-color: #000;
   overflow: hidden;
-}
+} */
 
 .space {
   position: relative;

@@ -1,0 +1,57 @@
+
+.grid-container {
+  background-color: #000;
+  width: 100vw;
+height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+
+
+/* .circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+} */
+
+.circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+/* Horizontal bar of the plus sign */
+.circle::before,
+.circle::after {
+  content: "";
+  position: absolute;
+  background-color: red;
+}
+
+/* Horizontal bar */
+.circle::before {
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Vertical bar */
+.circle::after {
+  width: 2px;
+  height: 10px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

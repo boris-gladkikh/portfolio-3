@@ -5,6 +5,8 @@ import About from './About';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Homepage from './Homepage';
+import GridRepel from './projects/002/GridRepel';
+import TriangleGrid from './projects/003/TriangleGrid';
 
 function Routes() {
   return (
@@ -16,6 +18,12 @@ function Routes() {
     </Route>
     <Route exact path="/portfolio">
       <Portfolio />
+    </Route>
+    <Route exact path="/001">
+      <GridRepel />
+    </Route>
+    <Route exact path="/002">
+    <TriangleGrid/>
     </Route>
 
     <Route exact path="/contact">

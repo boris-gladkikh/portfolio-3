@@ -13,7 +13,7 @@ function DesignGrid() {
   ));
   return (
 
-      <div className="grid-container">
+      <div className="design-grid-container">
         <h2 className="mb-5">DESIGN</h2>
         <div className="grid mt-5">{photoGrid}</div>
       </div>

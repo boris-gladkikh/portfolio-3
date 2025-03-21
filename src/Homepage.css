@@ -25,6 +25,21 @@ height: auto;
 
  .sub-header {
   width: 100%;
+  margin-top: 20px;
+
+ }
+
+ .project-links-section {
+  width: 100%;
+  margin-top:20px;
+ }
+
+ .project-link {
+  color: white !important;
+ }
+
+ .project-link:hover {
+  color: red !important;
  }
 
 
@@ -38,11 +53,10 @@ height: auto;
 }
 @media only screen and (max-width:600px) {
   .header {
-    font-size:52px;
+    font-size:72px;
   }
 
   .sub-header {
     font-size: 12px;
-    margin-top: -20px;
   }
 }
