@@ -5,7 +5,7 @@ a {
 }
 
 a:hover {
-  color:#2b768d;
+  color: #f1f1f1 !important;
 }
 
 .app {

@@ -13,6 +13,7 @@ function Homepage() {
           in Portland, OR.
         </div>
         <div className="project-links-section">
+
         <NavLink className="project-link" exact to="/001">001</NavLink>
         /
         <NavLink className="project-link" exact to="/002">002</NavLink>
@@ -20,6 +21,7 @@ function Homepage() {
         <NavLink className="project-link" exact to="/003">003</NavLink>
         /
         <NavLink className="project-link" exact to="/004">004</NavLink>
+        <div className="reminder">* some of these may not work on mobile.</div>
 
 
         </div>

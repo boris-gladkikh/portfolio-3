@@ -11,7 +11,7 @@
 }
 
 .card a:hover {
-  color: rgb(29, 183, 235);
+  color: #f1f1f1 !important;
   text-decoration: none;
 }
 

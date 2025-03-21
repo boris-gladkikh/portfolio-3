@@ -61,24 +61,24 @@ function ContactForm() {
       <Form onSubmit={handleSubmit} className="pt-5 text-white form-style">
 
         <Form.Group>
-          <Form.Label htmlFor="name">Name</Form.Label>
-          <Form.Control required onChange={handleChange} name="name" type="text" placeholder="Ex: Korben Dallas"></Form.Control>
+          <Form.Label htmlFor="name"></Form.Label>
+          <Form.Control required onChange={handleChange} name="name" type="text" placeholder="NAME"></Form.Control>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor="email">Email</Form.Label>
-          <Form.Control required onChange={handleChange} name="email" type="text" placeholder="Ex: Leeloo@gmail.com"></Form.Control>
+          <Form.Label htmlFor="email"></Form.Label>
+          <Form.Control required onChange={handleChange} name="email" type="text" placeholder="EMAIL"></Form.Control>
           <Form.Text>I will never share your Email address with anyone else.</Form.Text>
         </Form.Group>
 
         <Form.Group>
-              <Form.Label htmlFor="subject">Subject</Form.Label>
-              <Form.Control required onChange={handleChange} name="subject" type="subject" placeholder="Ex: I want a website!"></Form.Control>
+              <Form.Label htmlFor="subject"></Form.Label>
+              <Form.Control required onChange={handleChange} name="subject" type="subject" placeholder="SUBJECT"></Form.Control>
             </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor="body">Body</Form.Label>
-          <Form.Control required onChange={handleChange} name="body" as="textarea" rows="5" placeholder="Be Descriptive!"></Form.Control>
+          <Form.Label htmlFor="body"></Form.Label>
+          <Form.Control required onChange={handleChange} name="body" as="textarea" rows="5" placeholder="BODY"></Form.Control>
         </Form.Group>
 
         <div>
