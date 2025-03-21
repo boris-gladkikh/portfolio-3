@@ -34,7 +34,7 @@ const TriangleGrid = () => {
       y: prev.y + (mousePos.y - prev.y) * 0.1,
     }));
     requestRef.current = requestAnimationFrame(animateTrail);
-  });
+  },[mousePos.x, mousePos.y]);
 
   useEffect(() => {
     const handleMouseMove = (e) => setMousePos({ x: e.clientX, y: e.clientY });

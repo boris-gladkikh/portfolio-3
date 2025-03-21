@@ -3,7 +3,6 @@ import "./RainLines.css";
 
 const RainLines = () => {
   const containerRef = useRef(null);
-  const mouseRef = useRef({ x: -9999, y: -9999 });
 
   useEffect(() => {
     const mouseRef = { x: -9999, y: -9999 };

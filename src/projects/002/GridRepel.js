@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './GridRepel.css';
 
-const circleSize = 10;
 const gridSpacing = 25;
 
 const GridRepel = () => {
