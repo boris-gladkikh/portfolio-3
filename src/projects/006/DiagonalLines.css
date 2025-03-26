@@ -1,0 +1,51 @@
+.top-cont {
+  margin: 0;
+  padding: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+}
+
+.diagonal-container {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.line-column {
+  position: absolute;
+  top: 0;
+  width: 2px;
+}
+
+.line-segment {
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  transition: background-color 0.2s ease;
+  opacity: 0.9;
+}
+
+.line-segment.red {
+  background-color: red;
+  opacity: 1;
+}
+
+.mask-circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: black;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 2;
+  cursor: grab;
+}
+
+.mask-circle:active {
+  background-color: transparent;
+}

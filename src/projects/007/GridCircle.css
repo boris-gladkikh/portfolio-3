@@ -1,0 +1,63 @@
+.grid-container {
+  background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+.circle {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  transform-origin: center;
+}
+
+/* Plus sign */
+.circle::before,
+.circle::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+}
+
+.circle::before {
+  width: 10px;
+  height: 2px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle::after {
+  width: 2px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Activated: border + spin */
+.circle.activated {
+  border: 1px solid red;
+  border-radius: 50%;
+  animation: rotatePlus 1.2s linear infinite;
+}
+
+/* Red locked state */
+.circle.red::before,
+.circle.red::after {
+  background-color: red;
+}
+
+@keyframes rotatePlus {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

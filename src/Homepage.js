@@ -21,6 +21,10 @@ function Homepage() {
         <NavLink className="project-link" exact to="/003">003</NavLink>
         /
         <NavLink className="project-link" exact to="/004">004</NavLink>
+        /
+        <NavLink className="project-link" exact to="/005">005</NavLink>
+        /
+        <NavLink className="project-link" exact to="/006">006</NavLink>
         <div className="reminder">* some of these may not work on mobile.</div>
 
 

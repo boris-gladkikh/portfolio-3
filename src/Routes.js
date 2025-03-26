@@ -9,6 +9,8 @@ import GridRepel from './projects/002/GridRepel';
 import TriangleGrid from './projects/003/TriangleGrid';
 import RainLines from './projects/004/RainLines';
 import DiamondSquares from './projects/005/DiamondSquares';
+import DiagonalLines from './projects/006/DiagonalLines';
+import GridCircle from './projects/007/GridCircle';
 
 function Routes() {
   return (
@@ -32,6 +34,12 @@ function Routes() {
     </Route>
     <Route exact path="/004">
     <DiamondSquares/>
+    </Route>
+    <Route exact path="/005">
+    <DiagonalLines/>
+    </Route>
+    <Route exact path="/006">
+    <GridCircle/>
     </Route>
 
     <Route exact path="/contact">
