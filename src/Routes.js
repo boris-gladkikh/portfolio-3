@@ -11,6 +11,7 @@ import RainLines from './projects/004/RainLines';
 import DiamondSquares from './projects/005/DiamondSquares';
 import DiagonalLines from './projects/006/DiagonalLines';
 import GridCircle from './projects/007/GridCircle';
+import BurnItDown from './projects/008/BurnItDown';
 
 function Routes() {
   return (
@@ -40,6 +41,9 @@ function Routes() {
     </Route>
     <Route exact path="/006">
     <GridCircle/>
+    </Route>
+    <Route exact path="/007">
+    <BurnItDown/>
     </Route>
 
     <Route exact path="/contact">
