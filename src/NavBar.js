@@ -29,9 +29,9 @@ function NavBar() {
           <Nav.Item>
           <NavLink className="px-1" exact to="/">HOME</NavLink>
           </Nav.Item>
-          <Nav.Item>
+          {/* <Nav.Item>
           <NavLink className="px-1" to="/contact">CONTACT</NavLink>
-          </Nav.Item>
+          </Nav.Item> */}
         </Nav>
       </Navbar>
 
