@@ -77,7 +77,7 @@ const RainRepel = () => {
       {lines.map((line) => (
         <div
           key={line.id}
-          className={`rain-line${line.red ? ' red' : line.faded ? ' faded' : ''}`}
+          className={`boop-rain-line${line.red ? ' red' : line.faded ? ' faded' : ''}`}
           style={{
             left: `${line.x}px`,
             top: `${line.y}px`,

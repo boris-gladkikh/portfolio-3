@@ -19,7 +19,7 @@ const RainLines = () => {
     const animate = () => {
       if (!isMounted || !containerRef.current) return;
   
-      const segments = containerRef.current.querySelectorAll(".segment");
+      const segments = containerRef.current.querySelectorAll(".rain-segment");
       const radius = 300;
   
       segments.forEach((seg) => {
@@ -59,7 +59,7 @@ const RainLines = () => {
             {Array.from({ length: segmentCount }).map((_, j) => (
               <div
                 key={j}
-                className="segment"
+                className="rain-segment"
                 style={{
                   top: `${(j * 100) / segmentCount}%`,
                   animationDelay: `${Math.random() * 2}s`,
