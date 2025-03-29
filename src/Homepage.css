@@ -1,5 +1,5 @@
 .logo-container {
-  height: 100vh;
+  /* height: 100vh; */
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -7,8 +7,11 @@
   padding: 20px;
   overflow: hidden;
   line-height: 1;
-  background-color: black;
+  /* background-color: black; */
   color: white;
+  position: absolute;
+  top: 20vh;
+  left: 0;
 }
 
 
@@ -24,13 +27,13 @@ height: auto;
  }
 
  .sub-header {
-  width: 100%;
+  /* width: 100%; */
   margin-top: 20px;
 
  }
 
  .project-links-section {
-  width: 100%;
+  width: fit-content;
   margin-top:20px;
  }
 

@@ -12,7 +12,7 @@
 .ascii-grid {
   position: absolute;
   top: 0;
-  left: 20vw;
+  left: 0; /* 🧠 no more 20vw here — JS now handles alignment */
 }
 
 .plus {

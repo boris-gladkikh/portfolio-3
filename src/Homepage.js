@@ -1,10 +1,11 @@
 import React from "react";
 import "./Homepage.css";
 import { NavLink } from "react-router-dom";
-// import MoonLandingEffect from "./projects/001/MoonLandingEffect";
+import RainRepel from "./projects/001/RainRepel";
 function Homepage() {
   return (
     <>
+    <RainRepel/>
       <div className="logo-container">
         <div id="text-container">
         <div className=" header">BORIS GLADKIKH.</div>
