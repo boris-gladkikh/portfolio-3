@@ -13,6 +13,7 @@ import DiagonalLines from './projects/006/DiagonalLines';
 import GridCircle from './projects/007/GridCircle';
 import BurnItDown from './projects/008/BurnItDown';
 import GeishaMask from './projects/009/GeishaMask';
+import BorisGrid from './projects/010/BorisGrid';
 
 function Routes() {
   return (
@@ -48,6 +49,9 @@ function Routes() {
     </Route>
     <Route exact path="/008">
     <GeishaMask/>
+    </Route>
+    <Route exact path="/009">
+    <BorisGrid/>
     </Route>
 
     <Route exact path="/contact">

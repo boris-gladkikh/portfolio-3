@@ -55,7 +55,7 @@ const RainLines = () => {
       {Array.from({ length: lineCount }).map((_, i) => {
         const x = i * spacing;
         return (
-          <div key={i} className="rain-line" style={{ left: `${x}px` }}>
+          <div key={i} className="rain-line-003" style={{ left: `${x}px` }}>
             {Array.from({ length: segmentCount }).map((_, j) => (
               <div
                 key={j}

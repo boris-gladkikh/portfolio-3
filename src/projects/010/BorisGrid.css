@@ -1,0 +1,32 @@
+.top-cont {
+  margin: 0;
+  padding: 0;
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+  /* cursor: none; */
+}
+
+.boris-char {
+  position: absolute;
+  color: white;
+  transition: all 0.4s ease;
+  pointer-events: none;
+}
+
+.boris-char.red {
+  color: red;
+}
+
+.boris-char.centered {
+  z-index: 10;
+  transition: all 1s ease-in-out;
+}
+
+.boris-char.fade-out {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
