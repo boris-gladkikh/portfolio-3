@@ -1,15 +1,16 @@
-nav a {
+#nav-style a {
   color: white;
   transition: all 300ms;
+  cursor: pointer;
 }
 
-nav a.active {
+#nav-style a.active {
   font-weight: bold;
   color: red;
-
 }
 
-nav a:hover,nav a.active:hover {
+#nav-style a:hover,
+#nav-style a.active:hover {
   color: gray !important;
   text-decoration: none;
 }

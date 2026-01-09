@@ -1,0 +1,46 @@
+.top-cont.diamond-cont {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.diamond {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  position: absolute;
+}
+
+.top-triangle {
+  border-bottom: 60px solid red;
+  transform: translate(-40px, -60px);
+}
+
+.bottom-triangle {
+  border-top: 60px solid red;
+  transform: translate(-40px, 0px);
+}
+
+.spiral-letter {
+  position: absolute;
+  font-family: monospace;
+  font-size: 18px;
+  color: white;
+  pointer-events: none;
+  user-select: none;
+  transition: transform 0.1s linear;
+  z-index: 2;
+}

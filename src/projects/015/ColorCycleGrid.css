@@ -1,0 +1,16 @@
+.ccg-top-cont {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 43px;
+  background: black;
+  overflow: hidden;
+}
+
+.ccg-cell {
+  position: absolute;
+  font-family: monospace;
+  text-align: center;
+  user-select: none;
+  pointer-events: none;
+}

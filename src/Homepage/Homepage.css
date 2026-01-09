@@ -1,18 +1,37 @@
-.logo-container {
-  /* height: 100vh; */
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
-  padding: 20px;
-  overflow: hidden;
-  line-height: 1;
-  /* background-color: black; */
-  color: white;
-  position: absolute;
-  top: 20vh;
-  left: 0;
+.home-wrap {
+  position: relative;
+  min-height: 100vh;
 }
+
+.rain-layer {
+  position: fixed;
+  inset: 0;           
+  z-index: 0;
+  pointer-events: none; 
+}
+
+.content-layer {
+  position: relative;
+  z-index: 1;
+}
+
+.logo-container {
+  position: relative;       
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  min-height: 100vh;         
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about, #portfolio, #contact
+{
+  background: rgba(0,0,0,0.85); 
+  backdrop-filter: blur(1px);  
+}
+
 
 
 .logo-container img {

@@ -1,0 +1,25 @@
+.vortex-top-cont {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+}
+
+.vortex-plus {
+  position: absolute;
+  font-size: 18px;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+.vortex-plus.white {
+  color: white;
+}
+
+.vortex-plus.red {
+  color: red;
+}

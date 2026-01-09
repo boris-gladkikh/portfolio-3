@@ -1,0 +1,104 @@
+.about-container {
+  margin-top: 40px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+}
+
+.header-text {
+  padding: 0 15px;
+}
+
+.boris-cont {
+  width: 100%;
+  overflow: hidden;
+}
+
+.boris-cont img {
+  /* display: block;    */
+  width: 100%;       
+  height: auto;      
+}
+
+.boris-header {
+ width: 70%;
+  margin: auto;
+}
+
+.boris-img-cont {
+  width: 100%;
+}
+
+.boris-header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.skills-grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.skills-box {
+  width: 24%;
+  background-color: #212120;
+  padding: 10px;
+  color: white;
+  margin-bottom:10px;
+}
+
+.gray-box {
+  background-color: #212120;
+  padding: 10px;
+  color: white;
+  margin-bottom:10px;
+}
+
+
+.skills-box ul {
+  padding: 15px;
+  list-style-type: square;
+}
+
+/* .skills-box li {
+  border-bottom: 1px solid white;
+} */
+
+@media screen and (max-width: 1250px) {
+  .skills-box {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .boris-header {
+    width: 100%;
+  }
+  .skills-box {
+    width: 49%;
+  }
+
+  .bio-p {
+    padding: 15px 0;
+  }
+  .about-container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 600px) {
+
+  .header-text {
+    padding: 15px 0;
+  }
+
+  .skills-grid {
+    justify-content: center;
+  }
+  .skills-box {
+    width: 100%;
+  }
+}
+

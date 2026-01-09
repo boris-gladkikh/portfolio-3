@@ -1,10 +1,15 @@
 import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
-import NavBar from './NavBar';
-import About from './About';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
-import Homepage from './Homepage';
+import NavBar from './Navbar/NavBar';
+import About from './About/About';
+import Portfolio from './Portfolio/Portfolio';
+import Contact from './Contact/Contact';
+import Homepage from './Homepage/Homepage';
+
+
+
+//project list
+
 import GridRepel from './projects/002/GridRepel';
 import TriangleGrid from './projects/003/TriangleGrid';
 import RainLines from './projects/004/RainLines';
@@ -13,7 +18,13 @@ import DiagonalLines from './projects/006/DiagonalLines';
 import GridCircle from './projects/007/GridCircle';
 import BurnItDown from './projects/008/BurnItDown';
 import GeishaMask from './projects/009/GeishaMask';
-import BorisGrid from './projects/010/BorisGrid';
+import TextWaterfalls from './projects/010/TextWaterfalls';
+import TextCircles from './projects/011/TextCircles';
+import TextSpiralDiamond from './projects/012/TextSpiralDiamond';
+import LetterEmitRitual from './projects/014/LetterEmitRitual';
+import VortexRitual from './projects/013/VortexRitual';
+import ColorCycleGrid from './projects/015/ColorCycleGrid';
+import GlitchReveal from './projects/016/GlitchReveal';
 
 function Routes() {
   return (
@@ -51,7 +62,25 @@ function Routes() {
     <GeishaMask/>
     </Route>
     <Route exact path="/009">
-    <BorisGrid/>
+    <TextWaterfalls/>
+    </Route>
+    <Route exact path="/010">
+    <TextCircles/>
+    </Route>
+    <Route exact path="/011">
+    <TextSpiralDiamond/>
+    </Route>
+    <Route exact path="/012">
+    <VortexRitual/>
+    </Route>
+    <Route exact path="/013">
+    <LetterEmitRitual/>
+    </Route>
+    <Route exact path="/014">
+    <ColorCycleGrid/>
+    </Route>
+    <Route exact path="/015">
+    <GlitchReveal/>
     </Route>
 
     <Route exact path="/contact">

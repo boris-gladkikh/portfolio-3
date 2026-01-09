@@ -1,0 +1,41 @@
+/* GlitchReveal.css */
+.gr-top-cont {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  overflow: hidden;
+}
+
+/* Base text in center */
+.gr-text-base {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: monospace;
+  font-size: 72px;
+  color: red;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  z-index: 1;
+}
+
+.gr-slice {
+  position: absolute;
+  overflow: hidden;
+  color: white;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* .gr-h { }
+.gr-v {  } */
+
+.gr-text-glitch {
+  position: absolute;
+  top: 10;
+  left: 10;
+  transform-origin: center center;
+}
+

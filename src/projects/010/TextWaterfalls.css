@@ -1,0 +1,73 @@
+.top-cont {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  font-family: monospace;
+}
+
+.mask-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  margin-left: -300px;
+  margin-top: -300px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.letter-column {
+  position: absolute;
+  top: 0;
+}
+
+.letter {
+  position: absolute;
+  color: red;
+  font-size: 18px;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.letter.down {
+  animation-name: curveDown;
+}
+
+.letter.up {
+  animation-name: curveUp;
+}
+
+@keyframes curveDown {
+  0% {
+    transform: translateY(var(--start-y)) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50vh) translateX(calc(var(--x-offset) * 0.3));
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) translateX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes curveUp {
+  0% {
+    transform: translateY(var(--start-y)) translateX(0);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(50vh) translateX(calc(var(--x-offset) * -0.3));
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0vh) translateX(0);
+    opacity: 0;
+  }
+}
