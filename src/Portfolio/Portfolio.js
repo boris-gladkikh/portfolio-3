@@ -28,7 +28,7 @@ function Portfolio() {
               <div className="pt-5 page-header">PORTFOLIO.</div>
               <div className="mb-5">
                 <h2 className="mt-5">CREATIVE</h2>
-                <div className="my-4">
+                <div className="my-4 portfolio-description">
                   A series of interactive art pieces with an emphasis on
                   minimalism and user intuition / interaction. Desktop only.
                 </div>
@@ -41,7 +41,7 @@ function Portfolio() {
               </div>
               <div className="mb-5">
                 <h2 className="mt-5">FREELANCE</h2>
-                <div className="my-4">
+                <div className="my-4 portfolio-description">
                   Personal and freelance web development projects. Please
                   contact for corporate/enterprise projects.
                 </div>
@@ -53,8 +53,8 @@ function Portfolio() {
 
               </div>
               <h2 className="mt-5">DESIGN</h2>
-              <div className="my-4">
-                Examples of graphic design work, album art, one sheets, epk's and flyers.               
+              <div className="my-4 portfolio-description">
+              Examples of graphic design work, album art, one sheets, epk's and flyers.               
                 </div>
               <SnapCarousel>
                 {designList.map((d) => (

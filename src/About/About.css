@@ -1,24 +1,11 @@
 
-.header-text {
-  padding: 0 15px;
+
+.about-subheader {
+  color: red;
+
 }
 
 
-
-.boris-header {
- width: 70%;
-  margin: auto;
-}
-
-.boris-img-cont {
-  width: 100%;
-}
-
-.boris-header img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
 
 .skills-grid {
   display: flex;
@@ -49,9 +36,6 @@
   list-style-type: square;
 }
 
-/* .skills-box li {
-  border-bottom: 1px solid white;
-} */
 
 @media screen and (max-width: 1250px) {
   .skills-box {
@@ -59,22 +43,23 @@
   }
 }
 @media screen and (max-width: 1000px) {
-  .boris-header {
-    width: 100%;
+
+  .about-subheader {
+   font-size: 24px;
+  
   }
+
   .skills-box {
     width: 49%;
   }
 
-  .bio-p {
-    padding: 15px 0;
-  }
 
 }
 @media screen and (max-width: 600px) {
 
-  .header-text {
-    padding: 15px 0;
+  .about-p {
+    font-size: 14px;
+  
   }
 
   .skills-grid {
@@ -83,5 +68,7 @@
   .skills-box {
     width: 100%;
   }
+
+  
 }
 

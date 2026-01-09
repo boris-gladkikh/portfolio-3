@@ -20,25 +20,25 @@ function About() {
               <h1 className="my-5">I AM BORIS.</h1>
 
 
-              <h2 style={{ color: "red" }}>
+              <h2 className="about-subheader">
                 I am a full-stack software developer.
               </h2>
-              <p>
+              <p className="about-p">
                 I develop applications providing ethical quality of life
                 solutions to modern and future problems.
                 I have worked in healthcare tech, audio streaming tech, and
                 freelance app development.
               </p>
-              <h2 style={{ color: "red" }}>
+              <h2 className="about-subheader">
                 I am an audio engineer and educator.
               </h2>
-              <p>
+              <p className="about-p">
                 I have engineered & done sound design for established bands, I
                 have taught audio post-production, audio engineering, and sound
                 fundamentals at SAE technical institute.
               </p>
-              <h2 style={{ color: "red" }}>I am an A/V artist and musician.</h2>
-              <p>
+              <h2 className="about-subheader">I am an A/V artist and musician.</h2>
+              <p className="about-p">
                 I have toured the continental U.S. for over a decade as an
                 electronic musician and I continue to write and release music
                 under several aliases, and I am working on exciting new A/V
@@ -49,7 +49,6 @@ function About() {
                 I am currently part of the dev team at Radio Paradise, working
                 to bring human-curated music to people for free, without ads.
               </h3> */}
-              {/* I am also writing music under my <em>Gladkill</em> and <em>borisisntreal</em> aliases. */}
               <div className="pt-5 page-header">SKILLS.</div>
               <div className="skills-grid">
                 <div className="skills-box">

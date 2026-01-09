@@ -68,7 +68,7 @@ function ContactForm() {
         <Form.Group>
           <Form.Label htmlFor="email"></Form.Label>
           <Form.Control required onChange={handleChange} name="email" type="text" placeholder="EMAIL"></Form.Control>
-          <Form.Text>I will never share your Email address with anyone else.</Form.Text>
+          <Form.Text>I will never share your email address.</Form.Text>
         </Form.Group>
 
         <Form.Group>

@@ -8,7 +8,6 @@
   transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
 }
 
-/* image */
 .project-pic {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -17,20 +16,18 @@
   transition: transform 400ms ease, filter 300ms ease;
 }
 
-/* title */
 .project-title {
   padding: 10px;
   margin: 0;
 }
 
-/* description */
 .project-text {
-  background-color: #212120;
   padding: 10px;
   font-size: 14px;
+  max-height: 120px;
+  overflow-y: scroll;
 }
 
-/* hover / focus */
 .project-link:hover,
 .project-link:focus-visible {
   cursor: pointer;
@@ -44,7 +41,6 @@
   transform: scale(1.04);
 }
 
-/* remove default link styling */
 .project-link:visited,
 .project-link:hover,
 .project-link:active {
@@ -55,5 +51,9 @@
 @media screen and (max-width: 1000px) {
   .project-item {
     flex: 0 0 100%;
+  }
+
+  .project-text {
+    max-height: 70px;
   }
 }

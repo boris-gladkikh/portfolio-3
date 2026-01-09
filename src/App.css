@@ -12,6 +12,7 @@ a:hover {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: white;
+  width: 100%;
 }
 
 body {
@@ -117,6 +118,8 @@ p {
   position: relative;
   z-index: 1;
   padding-top: 15vh;
+  width: 100%;
+  overflow: hidden;
   /* padding-bottom: 90vh; */
 }
 
@@ -173,3 +176,9 @@ p {
   font-family: 'Righteous', cursive;
 }
 
+@media screen and (max-width: 1000px) {
+  .page-header {
+    font-size: 60px;
+  }
+  
+}

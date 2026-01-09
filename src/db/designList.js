@@ -5,6 +5,26 @@ let designs = [
   //   img: "/design/seapoint-cover.jpg",
   // },
   {
+    title: "",
+    detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+    img: "/design/gk-control.jpg",
+  },
+  {
+    title: "",
+    detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+    img: "/design/gk-over.jpg",
+  },
+  {
+    title: "borisisntreal ft. Gladkill - Consecution",
+    detail: "Album cover for electronic artist borisisntreal's single Consecution, TouchDesigner / Photoshop" ,
+    img: "/design/bir-consecution.jpg",
+  },
+  {
+    title: "borisisntreal - onesheet",
+    detail: "One-sheet for  electronic artist borisisntreal, TouchDesigner /  Photoshop" ,
+    img: "/design/bir-onesheet.jpg",
+  },
+  {
     title: "seapoint-cover",
     detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
     img: "/design/seapoint-cover.jpg",
@@ -16,24 +36,19 @@ let designs = [
     img: "/design/animal-skull-flowers.jpg",
   },
   {
-    title: "winters-cover",
-    detail: "Cover for electronic artist Gladkill's single 'Winters', Photoshop",
-    img: "/design/gk-winters-cover.jpg",
-  },
-  {
     title: "fugue-state-cover",
     detail: "Cover for indie band Satellite Respond's single 'Fugue State', Photoshop",
     img: "/design/sr-cover.jpg",
   },
   {
-    title: "sr-song-one-sheet",
-    detail: "Electronic press kit one sheet for indie band Satellite Respond's upcoming single 'August Falls', Photoshop",
-    img: "/design/august-falls-one-sheet.jpg",
-  },
-  {
     title: "medusa-cover",
     detail: "Cover for indie band Satellite Respond's single 'Medusa', Photoshop",
     img: "/design/sr-medusa-cover.jpg",
+  },
+  {
+    title: "sr-song-one-sheet",
+    detail: "Electronic press kit one sheet for indie band Satellite Respond's upcoming single 'August Falls', Photoshop",
+    img: "/design/august-falls-one-sheet.jpg",
   },
   {
     title: "sr-epk",
@@ -49,6 +64,11 @@ let designs = [
     title: "seance-cover",
     detail: "Cover for electronic artist Gladkill's EP 'Seance/This Love', Photoshop",
     img: "/design/gk-seance-cover.jpg",
+  },
+  {
+    title: "winters-cover",
+    detail: "Cover for electronic artist Gladkill's single 'Winters', Photoshop",
+    img: "/design/gk-winters-cover.jpg",
   },
   {
     title: "Gashadokuro album cover",

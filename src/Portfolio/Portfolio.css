@@ -1,12 +1,7 @@
-.overlay-contain {
-  display:flex;
-  flex-direction: column;
-  /* justify-content: center;
-  align-items:center; */
-  /* padding: 20px; */
-  overflow: hidden;
-  line-height: 1;
-  margin: auto;
-  color: white;
-  position: relative;
+@media screen and (max-width: 600px) {
+
+  .portfolio-description {
+    font-size: 14px;
+  }
+  
 }

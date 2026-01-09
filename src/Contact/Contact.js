@@ -20,7 +20,6 @@ function Contact() {
           <div className="parallax-content" id="contact">
             <div className="content-container" >
               <div className="pt-5 page-header">CONTACT.</div>
-              <div>Fill out this form for all your inquiries.</div>
               <ContactForm />
             </div>
             <div className="text-center">
