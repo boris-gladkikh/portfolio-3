@@ -1,59 +1,71 @@
 import React from "react";
 import "./About.css";
-import borisCam from ".././img/boris-cam.jpg";
+import borisTrees from "../img/boris-trees-large-web.jpg";
 
 function About() {
   return (
-    <>
-      <div className="app px-5 pb-5" id="about" >
-        <div className="pt-5 page-header">ABOUT.</div>
-        <div className="about-container"       
-        >
-          <div className="boris-header">
-            <img src={borisCam} alt="boris fx"></img>
-          </div>
-          <div className="header-text">
-            <div className="page-header">I AM BORIS.</div>
+    <section className="app">
+      <div className="parallax-section">
+        <div
+          className="parallax-bg"
+          style={{ backgroundImage: `url(${borisTrees})` }}
+          aria-hidden="true"
+        />
+
+        <div className="parallax-content">
+          <div className="content-container" id="about">
+          <div className="pt-5 page-header">ABOUT.</div>
+          
+          <div className="">
+
+            <h1 className="py-5">
+              I AM BORIS.
+            </h1>
+            
             <h2 style={{ color: "red" }}>
+              
               I am a full-stack software developer, audio engineer, sound
               designer, A/V creator and musician.
             </h2>
             <h5>
+              
               I develop applications providing ethical quality of life solutions
               to modern and future problems.
             </h5>
- 
             <br />
-            <div className="gray-box">
-            <h5>
-              I have worked in healthcare tech, audio streaming tech, and
-              freelance app development.
-            </h5>
-            <h5>
-              I have taught audio post-production, audio engineering, and sound
-              fundamentals at SAE technical institute.
-            </h5>
-            <h5>
-              I have engineered & done sound design for established bands, and I
-              have toured the continental U.S. for over a decade as an
-              electronic musician.
-            </h5>
-            </div>
+            {/* <div className="gray-box">
+              
+              <h5>
+                
+                I have worked in healthcare tech, audio streaming tech, and
+                freelance app development.
+              </h5>
+              <h5>
+                
+                I have taught audio post-production, audio engineering, and
+                sound fundamentals at SAE technical institute.
+              </h5>
+              <h5>
+                
+                I have engineered & done sound design for established bands, and
+                I have toured the continental U.S. for over a decade as an
+                electronic musician.
+              </h5>
+            </div> */}
             <br />
             <h3>
+              
               I am currently part of the dev team at Radio Paradise, working to
               bring human-curated music to people for free, without ads.
             </h3>
-            {/* I am also writing music under my <em>Gladkill</em> and{" "}
-            <em>borisisntreal</em> aliases. */}
-          </div>
-        </div>
-
-        <div className="pt-5 page-header">SKILLS.</div>
+            {/* I am also writing music under my <em>Gladkill</em> and <em>borisisntreal</em> aliases. */}
+            <div className="pt-5 page-header">SKILLS.</div>
         <div className="skills-grid">
+          
           <div className="skills-box">
+            
             <h4>CODE</h4>
-            <ul>
+            <ul>          
               <li>Javascript, Typescript, C#, Python</li>
               <li>Angular, React, Next.JS, Node.JS, ExpressJS</li>
               <li>.NET MVC, .NET Core</li>
@@ -61,41 +73,41 @@ function About() {
               <li>Azure - AZ900 Certified, AWS, S3, Amplify, Lambda</li>
             </ul>
           </div>
-
           <div className="skills-box">
+            
             <h4>DESIGN </h4>
-            <ul>
+            <ul> 
               <li>HTML5,CSS3, SCSS</li>
               <li>Material-UI, Bootstrap, Tailwind</li>
-              <li>Photoshop, Illustrator, Indesign</li>
-              <li>Figma</li>
-            </ul>            
+              <li>Photoshop, Illustrator, Indesign</li> <li>Figma</li>
+            </ul>
           </div>
-
           <div className="skills-box">
+            
             <h4>AUDIO </h4>
-            <ul>
+            <ul>  
               <li>Ableton Live, Pro Tools, Cubase, Logic</li>
               <li>FMOD, WWISE</li>
               <li>Signal flow, engineering, recording studio experience</li>
               <li>Composition, scoring, soundtrack </li>
               <li>Post-production, SFX design, Foley, Mixing</li>
-              
             </ul>
-                   
           </div>
-
           <div className="skills-box">
+            
             <h4>VISUAL </h4>
             <ul>
-              <li>Da Vinci Resolve</li>
-              <li>TouchDesigner</li>
-              <li>Resolume</li>
+              
+              <li>Da Vinci Resolve</li> <li>TouchDesigner</li> <li>Resolume</li>
             </ul>
           </div>
         </div>
+          </div>
+        </div>
+
+        </div>
       </div>
-    </>
+    </section>
   );
 }
 

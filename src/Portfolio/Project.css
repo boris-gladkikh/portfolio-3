@@ -1,54 +1,59 @@
-.modal {
-  backdrop-filter: blur(5px);
-  border: none;
-}
-
-.card a {
+.project-item {
+  flex: 0 0 50%;
+  background-color: black;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
   color: white;
-}
-.card a.active {
-  color: rgb(29, 183, 235);
+  transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
 }
 
-.card a:hover {
-  color: #f1f1f1 !important;
+/* image */
+.project-pic {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 400ms ease, filter 300ms ease;
+}
+
+/* title */
+.project-title {
+  padding: 10px;
+  margin: 0;
+}
+
+/* description */
+.project-text {
+  background-color: #212120;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* hover / focus */
+.project-link:hover,
+.project-link:focus-visible {
+  cursor: pointer;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.25);
+}
+
+.project-link:hover .project-pic,
+.project-link:focus-visible .project-pic {
+  filter: brightness(0.7);
+  transform: scale(1.04);
+}
+
+/* remove default link styling */
+.project-link:visited,
+.project-link:hover,
+.project-link:active {
+  color: white;
   text-decoration: none;
 }
 
-.project-pic {
-  opacity: 1;
-  transition: all 300ms;
-  height: 240px;
-  width: auto;
-  border: 2px solid white;
-  overflow: hidden;
+@media screen and (max-width: 1000px) {
+  .project-item {
+    flex: 0 0 100%;
+  }
 }
-
-.project-pic img {
-  width: 100%;
-  object-fit: contain;
-}
-
-.project-pic:hover {
-  opacity: .5;
-  cursor: pointer;
-}
-
-.modal-button {
-  padding: 2px;
-  border: none;
-  background: none;
-  color: white;
-  margin-bottom: 5px;
-  height: 2rem;
-  width: 2rem;
-  transition: all 300ms;
-
-}
-
-
-.modal-button:hover{
-  background-color:tomato;
-
-}
-

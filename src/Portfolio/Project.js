@@ -1,24 +1,49 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Project.css";
 
 function Project({ project }) {
+  const CardContent = (
+    <>
+      <h5 className="project-title">{project.title}</h5>
+      <img
+        src={project.img}
+        alt={`pic of ${project.title}`}
+        className="project-pic"
+      />
 
+      {project.type === "freelance" && project.description && (
+        <div className="project-text">
+          {project.description}
+        </div>
+      )}
+    </>
+  );
+
+  // External link (freelance)
+  if (project.type === "freelance") {
+    return (
+      <a
+        href={project.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="project-item project-link"
+        data-card
+      >
+        {CardContent}
+      </a>
+    );
+  }
+
+  // Internal route (creative)
   return (
-    <div className="mt-2 mb-2">
-      <h6>{project.title}</h6>
-      <div className="text-right">
-            </div>
-            {/* <img
-              style={{ maxWidth: "100%" }}
-              src={project.img}
-              alt={`pic of ${project.title}`}
-              className="m-0 modal-pic"
-            /> */}
-            <div className="my-5">{project.description}</div>
-            <div className="">
-              <a target="_blank" rel="noopener noreferrer" href={project.link}>Link</a>
-            </div>
-    </div>
+    <Link
+      to={project.link}
+      className="project-item project-link"
+      data-card
+    >
+      {CardContent}
+    </Link>
   );
 }
 

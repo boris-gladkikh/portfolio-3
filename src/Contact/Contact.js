@@ -1,25 +1,36 @@
-import React from 'react';
-import ContactForm from './ContactForm';
-import ContactIcons from './ContactIcons';
-import './Contact.css';
-
+import React from "react";
+import ContactForm from "./ContactForm";
+import ContactIcons from "./ContactIcons";
+import "./Contact.css";
+import borisGraf2 from "../img/boris-grafiti-2-large-web.jpg";
 
 function Contact() {
-
-  window.scrollTo(0,0);
+  window.scrollTo(0, 0);
 
   return (
     <>
-      <div id="contact" className="app p-5">
-        <div className="page-header">CONTACT.</div>
-        <div>Fill out this form for all your inquiries.</div>
-        <ContactForm />
-      </div>
-      <div className='text-center'>
-        <ContactIcons />
+      <div  className="app ">
+        <div className="parallax-section">
+        <div
+            className="parallax-bg"
+            style={{ backgroundImage: `url(${borisGraf2})` }}
+            aria-hidden="true"
+          />
+
+          <div className="parallax-content" id="contact">
+            <div className="content-container" >
+              <div className="pt-5 page-header">CONTACT.</div>
+              <div>Fill out this form for all your inquiries.</div>
+              <ContactForm />
+            </div>
+            <div className="text-center">
+              <ContactIcons />
+            </div>
+        </div>
+        </div>
       </div>
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

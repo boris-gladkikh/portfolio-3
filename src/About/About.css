@@ -1,24 +1,9 @@
-.about-container {
-  margin-top: 40px;
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-around;
-}
 
 .header-text {
   padding: 0 15px;
 }
 
-.boris-cont {
-  width: 100%;
-  overflow: hidden;
-}
 
-.boris-cont img {
-  /* display: block;    */
-  width: 100%;       
-  height: auto;      
-}
 
 .boris-header {
  width: 70%;
@@ -84,9 +69,7 @@
   .bio-p {
     padding: 15px 0;
   }
-  .about-container {
-    flex-direction: column;
-  }
+
 }
 @media screen and (max-width: 600px) {
 

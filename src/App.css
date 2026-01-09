@@ -10,9 +10,7 @@ a:hover {
 
 .app {
   min-height: 100vh;
-  /* text-align: center; */
   font-family: 'Poppins', sans-serif;
-  /* background-color: black; */
   color: white;
 }
 
@@ -90,27 +88,38 @@ p {
   color: white;
 }
 
-/* FONTS */
-
-.aguafina-font {
-  font-family: 'Aguafina Script', cursive;
+.content-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  padding: 28px;
 }
 
-.alata-font {
-  font-family: 'Alata', sans-serif;
+/* wrapper for the parallax hero part */
+.parallax-section {
+  position: relative;
+  /* margin-top: 40px; */
 }
 
-.poppins-font {
-  font-family: 'Poppins', sans-serif;
+.parallax-bg {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
 }
 
-.prompt-font {
-  font-family: 'Prompt', sans-serif;
+.parallax-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 15vh;
+  /* padding-bottom: 90vh; */
 }
 
-.righteous-font {
-  font-family: 'Righteous', cursive;
-}
 
 /* MAIN COLORS */
 
@@ -142,5 +151,25 @@ p {
   color: #BFBFBF;
 }
 
+/* FONTS */
 
+.aguafina-font {
+  font-family: 'Aguafina Script', cursive;
+}
+
+.alata-font {
+  font-family: 'Alata', sans-serif;
+}
+
+.poppins-font {
+  font-family: 'Poppins', sans-serif;
+}
+
+.prompt-font {
+  font-family: 'Prompt', sans-serif;
+}
+
+.righteous-font {
+  font-family: 'Righteous', cursive;
+}
 

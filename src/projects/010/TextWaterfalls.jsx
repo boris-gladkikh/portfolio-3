@@ -4,7 +4,7 @@ import './TextWaterfalls.css';
 const TEXT = 'borisisntreal';
 const COLUMN_COUNT = 60;
 const LETTER_HEIGHT = 20;
-const MASK_RADIUS = 300;
+// const MASK_RADIUS = 300;
 
 const TextWaterfalls = () => {
   const [columns, setColumns] = useState([]);

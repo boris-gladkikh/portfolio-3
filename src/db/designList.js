@@ -1,4 +1,9 @@
 let designs = [
+  // {
+  //   title: "",
+  //   detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+  //   img: "/design/seapoint-cover.jpg",
+  // },
   {
     title: "seapoint-cover",
     detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,

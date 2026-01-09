@@ -1,4 +1,15 @@
 let projects = [
+
+  {
+    type:"freelance",
+    title:"borisisntreal",
+    description: "Artist website for electronic musician borisisntreal. Custrom interactive web art created with JS and CSS.",
+    frontend:"React, Typescript, CSS",
+    backend:"Netlify for contact management and hosting, no conventional backend",
+    img:"/projects/borisisntreal-site.jpg",
+    link:"https://bagraphicsolutions.com/",
+    github:"https://github.com/boris-gladkikh/bags-site"
+  },
   {
     type:"freelance",
     title:"Bay Area Graphic Solutions",

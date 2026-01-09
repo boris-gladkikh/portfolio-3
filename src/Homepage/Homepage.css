@@ -28,8 +28,9 @@
 
 #about, #portfolio, #contact
 {
-  background: rgba(0,0,0,0.85); 
-  backdrop-filter: blur(1px);  
+  /* background: rgba(0,0,0,0.85); 
+  backdrop-filter: blur(1px);   */
+background: black;
 }
 
 
