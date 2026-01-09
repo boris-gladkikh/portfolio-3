@@ -27,19 +27,7 @@ function Portfolio() {
             <div className="content-container" id="portfolio">
               <div className="pt-5 page-header">PORTFOLIO.</div>
               <div className="mb-5">
-                <h2 className="my-5">FREELANCE</h2>
-                <div className="my-4">
-                  Personal and freelance web development projects. Please
-                  contact for corporate/enterprise projects.
-                </div>
-                <SnapCarousel>
-                  {freelance.map((p) => (
-                    <Project key={p.id ?? p.title} project={p} type={p.type} />
-                  ))}
-                </SnapCarousel>
-              </div>
-              <div className="mb-5">
-                <h2 className="mb-5">CREATIVE</h2>
+                <h2 className="mt-5">CREATIVE</h2>
                 <div className="my-4">
                   A series of interactive art pieces with an emphasis on
                   minimalism and user intuition / interaction. Desktop only.
@@ -51,7 +39,23 @@ function Portfolio() {
                   ))}
                 </SnapCarousel>
               </div>
-              <h2 className="mb-5">DESIGN</h2>
+              <div className="mb-5">
+                <h2 className="mt-5">FREELANCE</h2>
+                <div className="my-4">
+                  Personal and freelance web development projects. Please
+                  contact for corporate/enterprise projects.
+                </div>
+                <SnapCarousel>
+                  {freelance.map((p) => (
+                    <Project key={p.id ?? p.title} project={p} type={p.type} />
+                  ))}
+                </SnapCarousel>
+
+              </div>
+              <h2 className="mt-5">DESIGN</h2>
+              <div className="my-4">
+                Examples of graphic design work, album art, one sheets, epk's and flyers.               
+                </div>
               <SnapCarousel>
                 {designList.map((d) => (
                   <DesignItem
