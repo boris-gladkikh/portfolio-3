@@ -5,6 +5,11 @@
 
 }
 
+.about-ul {
+  padding: 0 15px;
+  list-style-type: square;
+}
+
 
 
 .skills-grid {
@@ -57,7 +62,7 @@
 }
 @media screen and (max-width: 600px) {
 
-  .about-p {
+  .about-ul {
     font-size: 14px;
   
   }

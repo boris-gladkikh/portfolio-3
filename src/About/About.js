@@ -19,30 +19,53 @@ function About() {
             <div className="">
               <h1 className="my-5">I AM BORIS.</h1>
 
-
               <h2 className="about-subheader">
                 I am a full-stack software developer.
               </h2>
-              <p className="about-p">
-                I develop applications providing ethical quality of life
-                solutions to modern and future problems.
-                I have worked in healthcare tech, audio streaming tech, and
-                freelance app development.
-              </p>
+              <ul className="about-ul">
+                <li>
+                  I develop applications providing ethical quality of life
+                  solutions to modern and future problems.
+                </li>
+                <li>
+                  I have worked in healthcare tech, audio streaming tech, and
+                  freelance app development.
+                </li>
+              </ul>
               <h2 className="about-subheader">
                 I am an audio engineer and educator.
               </h2>
-              <p className="about-p">
-                I have engineered & done sound design for established bands, I
-                have taught audio post-production, audio engineering, and sound
-                fundamentals at SAE technical institute.
-              </p>
-              <h2 className="about-subheader">I am an A/V artist and musician.</h2>
-              <p className="about-p">
+              <ul className="about-ul">
+                <li>
+                  I have engineered & done sound design for established bands and artists.
+                </li>
+                <li>
+                  I have done SFX and scoring / soundtrack for video projects.
+                </li>
+                <li>
+                  I have taught audio post-production, audio engineering, and sound
+                  fundamentals at SAE technical institute.
+                </li>
+              </ul>
+              <h2 className="about-subheader">
+                I am an A/V artist and musician.
+              </h2>
+              <ul className="about-ul">
+                <li>
                 I have toured the continental U.S. for over a decade as an
-                electronic musician and I continue to write and release music
-                under several aliases, and I am working on exciting new A/V
+                electronic musician.
+                </li>
+                <li>
+                I continue to write and release music
+                under several musical aliases.
+                </li>
+                <li>
+                I am working on exciting new A/V
                 endeavors and interactive art.
+                </li>
+              </ul>
+              <p className="about-p">
+
               </p>
 
               {/* <h3 className="">
