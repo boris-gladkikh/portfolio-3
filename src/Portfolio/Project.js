@@ -20,7 +20,6 @@ function Project({ project }) {
     </>
   );
 
-  // External link (freelance)
   if (project.type === "freelance") {
     return (
       <a
@@ -35,7 +34,6 @@ function Project({ project }) {
     );
   }
 
-  // Internal route (creative)
   return (
     <Link
       to={project.link}

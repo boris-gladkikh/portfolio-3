@@ -8,29 +8,26 @@ import Contact from "../Contact/Contact";
 
 function Homepage() {
   return (
-    <div className="home-wrap">
-      <div className="rain-layer">
-        <RainRepel />
-      </div>
-
-      <div className="content-layer" >
-        <div className="logo-container" id="home">
-          <div id="text-container">
-            <div className="header">BORIS GLADKIKH.</div>
-            <div className="sub-header">
-              I am a software developer / electronic musician / A/V artist residing
-              in Portland, OR.
+    <div className="home-wrap" id="home">
+        <RainRepel>
+          <div className="content-layer">
+          <div className="logo-container" >
+            <div id="text-container">
+              <div className="header">BORIS GLADKIKH.</div>
+              <div className="sub-header">
+                I am a software developer / electronic musician / A/V artist
+                residing in Portland, OR.
+              </div>
             </div>
           </div>
-        </div>
+          </div>
+        </RainRepel>
 
-        <About />
-        <Portfolio />
-        <Contact />
-      </div>
+      <About />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }
-
 
 export default Homepage;
