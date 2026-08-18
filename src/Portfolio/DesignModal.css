@@ -1,46 +1,40 @@
+/* Enlarged view of a design piece. Not part of the printed layout — it opens
+   only on click, and keeps the system's rules: no radius, no shadow, 2px edge. */
+
 .design-modal-overlay {
   position: fixed;
   inset: 0;
-  z-index: 999;
-  background: rgba(0,0,0,0.75);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
+  z-index: 60;
+  display: grid;
+  place-items: center;
+  padding: var(--space-6);
+  background: color-mix(in srgb, var(--color-neutral-900) 78%, transparent);
 }
 
 .design-modal {
-  max-width: min(900px, 95vw);
+  display: grid;
+  gap: var(--space-3);
+  width: min(760px, 100%);
   max-height: 90vh;
-  background: black;
-  border: 1px solid rgba(255,255,255,0.2);
-  padding: 12px;
+  padding: var(--space-4);
+  background: var(--color-bg);
+  border: 2px solid var(--color-text);
 }
 
-.modal-image {
+.design-modal .modal-image {
   width: 100%;
-  height: auto;
-  max-height: 75vh;
+  max-height: 66vh;
   object-fit: contain;
-  display: block;
 }
 
-.modal-detail {
-  margin-top: 10px;
-  background: #212120;
-  color: white;
-  padding: 10px;
+.design-modal .modal-detail {
   font-size: 14px;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
 }
 
-.close-btn {
-  margin-top: 10px;
-  background: none;
-  border: 1px solid rgba(255,255,255,0.35);
-  color: white;
-  padding: 6px 10px;
-  cursor: pointer;
-}
-.close-btn:hover {
-  background: rgba(255, 0, 0, 0.2);
+.design-modal .close-btn {
+  justify-self: start;
+  justify-content: flex-start;
+  min-width: 160px;
 }

@@ -3,9 +3,14 @@ import "./DesignItem.css";
 
 function DesignItem({ design, onOpen }) {
   return (
-    <div className="design-card" data-card onClick={onOpen}>
-      <img src={design.img} alt={design.name} />
-    </div>
+    <figure className="design-item">
+      <button type="button" className="design-item-btn" onClick={onOpen}>
+        <span className="media media--1x1">
+          <img src={design.img} alt={design.title} loading="lazy" />
+        </span>
+      </button>
+      <figcaption>{design.title}</figcaption>
+    </figure>
   );
 }
 

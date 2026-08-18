@@ -1,59 +1,74 @@
-.project-item {
-  flex: 0 0 50%;
-  background-color: black;
-  overflow: hidden;
-  display: block;
+/* — creative cell — */
+.creative-cell {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+  color: var(--color-text);
   text-decoration: none;
-  color: white;
-  transition: transform 300ms ease, filter 300ms ease, box-shadow 300ms ease;
 }
 
-.project-pic {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  display: block;
-  transition: transform 400ms ease, filter 300ms ease;
+.creative-caption {
+  display: grid;
+  gap: var(--space-1);
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-divider);
 }
 
-.project-title {
-  padding: 10px;
+.creative-title {
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: 19px;
+  letter-spacing: -0.02em;
+}
+
+.creative-description {
+  font-size: 13px;
+  line-height: 1.45;
+  color: color-mix(in srgb, var(--color-text) 60%, transparent);
+}
+
+.creative-cell:hover .creative-title {
+  color: var(--color-accent);
+}
+
+/* — freelance row — */
+.freelance-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr);
+  gap: var(--space-8);
+  align-items: start;
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-divider);
+}
+
+
+
+.freelance-detail {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.freelance-detail h4 {
   margin: 0;
+  font-size: clamp(19px, 1.7vw, 25px);
+  letter-spacing: -0.02em;
 }
 
-.project-text {
-  padding: 10px;
+.freelance-detail p {
+  margin: 0;
   font-size: 14px;
-  max-height: 120px;
-  overflow-y: scroll;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--color-text) 70%, transparent);
 }
 
-.project-link:hover,
-.project-link:focus-visible {
-  cursor: pointer;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(255, 0, 0, 0.25);
+.freelance-visit {
+  justify-self: start;
+  margin-top: var(--space-1);
 }
 
-.project-link:hover .project-pic,
-.project-link:focus-visible .project-pic {
-  filter: brightness(0.7);
-  transform: scale(1.04);
-}
-
-.project-link:visited,
-.project-link:hover,
-.project-link:active {
-  color: white;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1000px) {
-  .project-item {
-    flex: 0 0 100%;
-  }
-
-  .project-text {
-    max-height: 70px;
+@media (max-width: 1000px) {
+  .freelance-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-4);
   }
 }

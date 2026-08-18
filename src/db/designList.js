@@ -1,131 +1,137 @@
+// `title` is the grid caption, `detail` the line shown when a piece is opened.
 let designs = [
-  // {
-  //   title: "",
-  //   detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
-  //   img: "/design/seapoint-cover.jpg",
-  // },
   {
-    title: "",
-    detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+    title: "Gladkill — Control, album art",
+    detail: "Album cover for electronic artist Gladkill's 'Control', Photoshop",
     img: "/design/gk-control.jpg",
   },
   {
-    title: "",
-    detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+    title: "Gladkill — Over, album art",
+    detail: "Album cover for electronic artist Gladkill's 'Over', Photoshop",
     img: "/design/gk-over.jpg",
   },
   {
-    title: "borisisntreal ft. Gladkill - Consecution",
-    detail: "Album cover for electronic artist borisisntreal's single Consecution, TouchDesigner / Photoshop" ,
+    title: "borisisntreal ft. Gladkill — Consecution",
+    detail:
+      "Album cover for electronic artist borisisntreal's single Consecution, TouchDesigner / Photoshop",
     img: "/design/bir-consecution.jpg",
   },
   {
-    title: "borisisntreal - onesheet",
-    detail: "One-sheet for  electronic artist borisisntreal, TouchDesigner /  Photoshop" ,
+    title: "borisisntreal — one sheet / EPK",
+    detail:
+      "One-sheet for  electronic artist borisisntreal, TouchDesigner /  Photoshop",
     img: "/design/bir-onesheet.jpg",
   },
   {
-    title: "seapoint-cover",
-    detail: "Album cover for electronic artist Seapoint's single Passeig, Photoshop" ,
+    title: "Seapoint — Passeig, album art",
+    detail:
+      "Album cover for electronic artist Seapoint's single Passeig, Photoshop",
     img: "/design/seapoint-cover.jpg",
   },
-
   {
-    title: "floral-skull-collage",
+    title: "Floral animal skull, collage",
     detail: "Floral Animal Skull Collage, Photoshop",
     img: "/design/animal-skull-flowers.jpg",
   },
   {
-    title: "fugue-state-cover",
-    detail: "Cover for indie band Satellite Respond's single 'Fugue State', Photoshop",
+    title: "Satellite Respond — Fugue State, cover",
+    detail:
+      "Cover for indie band Satellite Respond's single 'Fugue State', Photoshop",
     img: "/design/sr-cover.jpg",
   },
   {
-    title: "medusa-cover",
-    detail: "Cover for indie band Satellite Respond's single 'Medusa', Photoshop",
+    title: "Satellite Respond — Medusa, cover",
+    detail:
+      "Cover for indie band Satellite Respond's single 'Medusa', Photoshop",
     img: "/design/sr-medusa-cover.jpg",
   },
   {
-    title: "sr-song-one-sheet",
-    detail: "Electronic press kit one sheet for indie band Satellite Respond's upcoming single 'August Falls', Photoshop",
+    title: "Satellite Respond — August Falls, one sheet",
+    detail:
+      "Electronic press kit one sheet for indie band Satellite Respond's upcoming single 'August Falls', Photoshop",
     img: "/design/august-falls-one-sheet.jpg",
   },
   {
-    title: "sr-epk",
-    detail: "Electronic press kit one sheet for indie band Satellite Respond, Photoshop",
+    title: "Satellite Respond — EPK",
+    detail:
+      "Electronic press kit one sheet for indie band Satellite Respond, Photoshop",
     img: "/design/sr-epk.jpg",
   },
   {
-    title: "russ-liquid-cover",
-    detail: "Cover for electronic artist Russ Liquid's album 'Foreign Frequency', Photoshop",
+    title: "Russ Liquid — Foreign Frequency, album art",
+    detail:
+      "Cover for electronic artist Russ Liquid's album 'Foreign Frequency', Photoshop",
     img: "/design/russ-liquid-cover.jpg",
   },
   {
-    title: "seance-cover",
-    detail: "Cover for electronic artist Gladkill's EP 'Seance/This Love', Photoshop",
+    title: "Gladkill — Seance / This Love, EP art",
+    detail:
+      "Cover for electronic artist Gladkill's EP 'Seance/This Love', Photoshop",
     img: "/design/gk-seance-cover.jpg",
   },
   {
-    title: "winters-cover",
-    detail: "Cover for electronic artist Gladkill's single 'Winters', Photoshop",
+    title: "Gladkill — Winters, single art",
+    detail:
+      "Cover for electronic artist Gladkill's single 'Winters', Photoshop",
     img: "/design/gk-winters-cover.jpg",
   },
   {
-    title: "Gashadokuro album cover",
+    title: "Gladkill — Gashadokuro, single art",
     detail: "Cover for Gladkill's single 'Gashadokuro',Photoshop.",
     img: "/design/gk-gashadokuro-cover.jpg",
   },
   {
-    title: "Gladkill & Krane Cover",
-    detail: "Cover for Gladkill and Krane's single 'Show You',Photoshop, Illustrator",
+    title: "Gladkill & Krane — Show You, single art",
+    detail:
+      "Cover for Gladkill and Krane's single 'Show You',Photoshop, Illustrator",
     img: "/design/gk-krne-cover.jpg",
   },
   {
-    title: "gk-rose-skull-cover",
+    title: "Rose skull, cover concept",
     detail: "Cover concept art, Photoshop",
     img: "/design/floral-skull.jpg",
   },
   {
-    title: "higher-cover",
+    title: "Higher, cover concept",
     detail: "Cover concept art, Photoshop",
     img: "/design/higher-cover.jpg",
   },
   {
-    title: "bone-hand",
+    title: "Bone hand, cover concept",
     detail: "cover concept art, Photoshop",
     img: "/design/bone-hand.jpg",
   },
   {
-    title: "fr-flyer",
+    title: "Foundations — Los Angeles showcase flyer",
     detail: "Promo flyer for electronic showcase in Los Angeles, Photoshop",
     img: "/design/fr-flyer.jpg",
   },
   {
-    title: "Foundations Compilation Cover",
+    title: "Foundations Recordings — compilation art",
     detail: "Cover for Foundations Recordings' compilation album",
     img: "/design/fr-comp-cover.jpg",
   },
   {
-    title: "Accolades Release Flyer",
+    title: "Accolades — release party flyer",
     detail: "Promo flyer for electronic showcase in Los Angeles, Photoshop",
     img: "/design/accolades-party-flyer.jpg",
   },
   {
-    title: "jobot-cover",
+    title: "Jobot — Too Much, single art",
     detail: "Cover for electronic Artist Jobot's single 'Too Much'",
     img: "/design/jobot-cover.jpg",
   },
   {
-    title: "bedrockk-cover",
-    detail: "Cover for electronic artist Bedrockk's single 'Flux Eternal', Photoshop",
+    title: "Bedrockk — Flux Eternal, single art",
+    detail:
+      "Cover for electronic artist Bedrockk's single 'Flux Eternal', Photoshop",
     img: "/design/bedrockk-cover.jpg",
   },
   {
-    title: "stream-flyer",
+    title: "Foundations — online showcase flyer",
     detail: "Promo flyer for electronic record label online showcase",
     img: "/design/stream-flyer.jpg",
   },
-
 ];
 
 export default designs;

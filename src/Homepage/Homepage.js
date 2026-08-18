@@ -1,32 +1,57 @@
 import React from "react";
 import "./Homepage.css";
-// import { NavLink } from "react-router-dom";
-import RainRepel from "../projects/001/RainRepel";
 import About from "../About/About";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
+import Footer from "../Footer";
+import portrait from "../img/boris-grafiti-vertical.jpg";
+
+const DISCIPLINES = ["Code", "Design", "Audio", "Visual"];
 
 function Homepage() {
   return (
-    <div className="home-wrap" id="home">
-        <RainRepel>
-          <div className="content-layer">
-          <div className="logo-container" >
-            <div id="text-container">
-              <div className="header">BORIS GLADKIKH.</div>
-              <div className="sub-header">
-                I am a software developer / electronic musician / A/V artist
-                residing in Portland, OR.
+    <>
+      <section id="home" className="section home">
+        <div className="eyebrow">
+          <span className="eyebrow-num">01</span>
+          <span>welcome</span>
+          <span className="eyebrow-rule" />
+        </div>
+
+        <h1 className="home-name">
+          Boris
+          <br />
+          Gladkikh<span className="accent">.</span>
+        </h1>
+
+        <div className="home-grid">
+          <div className="home-lede">
+            <p className="home-tagline">
+              I am a software developer / electronic musician / A/V artist
+              residing in Portland, OR.
+            </p>
+
+            <div className="home-disciplines">
+              <span className="label">Disciplines</span>
+              <div className="home-discipline-row">
+                {DISCIPLINES.map((discipline) => (
+                  <span key={discipline}>{discipline}</span>
+                ))}
               </div>
             </div>
           </div>
-          </div>
-        </RainRepel>
+
+          <figure className="media media--3x4 grayscale">
+            <img src={portrait} alt="Boris Gladkikh" />
+          </figure>
+        </div>
+      </section>
 
       <About />
       <Portfolio />
       <Contact />
-    </div>
+      <Footer />
+    </>
   );
 }
 

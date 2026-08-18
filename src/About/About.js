@@ -1,120 +1,129 @@
 import React from "react";
 import "./About.css";
-import borisTrees from "../img/boris-trees-large-web.jpg";
+import mural from "../img/boris-grafiti-large-web.jpg";
+
+const STATEMENTS = [
+  {
+    statement: "I am a full-stack software developer.",
+    points: [
+      "I develop applications providing ethical quality of life solutions to modern and future problems.",
+      "I have worked in healthcare tech, audio streaming tech, and freelance app development.",
+    ],
+  },
+  {
+    statement: "I am an audio engineer and educator.",
+    points: [
+      "I have engineered & done sound design for established bands and artists.",
+      "I have done SFX and scoring / soundtrack for video projects.",
+      "I have taught audio post-production, audio engineering, and sound fundamentals at SAE technical institute.",
+    ],
+  },
+  {
+    statement: "I am an A/V artist and musician.",
+    points: [
+      "I have toured the continental U.S. for over a decade as an electronic musician.",
+      "I continue to write and release music under several musical aliases.",
+      "I am working on exciting new A/V endeavors and interactive art.",
+    ],
+  },
+];
+
+const SKILLS = [
+  {
+    discipline: "Code",
+    items: [
+      "Typescript, Python, C#, PHP",
+      "AngularJS, React, Next.JS, Node.JS, ExpressJS",
+      ".NET MVC, .NET Core",
+      "SQL, NoSQL, PostgreSQL MySQL MongoDB, MSSQL",
+      "Azure - AZ900 Certified, AWS, S3, Amplify, Lambda",
+    ],
+  },
+  {
+    discipline: "Design",
+    items: [
+      "HTML5,CSS3, SCSS",
+      "Material-UI, Bootstrap, Tailwind",
+      "Photoshop, Illustrator, Indesign",
+      "Figma",
+    ],
+  },
+  {
+    discipline: "Audio",
+    items: [
+      "Ableton Live, Pro Tools, Cubase, Logic",
+      "FMOD, WWISE",
+      "Signal flow, engineering, recording studio experience",
+      "Composition, scoring, soundtrack",
+      "Post-production, SFX design, Foley, Mixing",
+    ],
+  },
+  {
+    discipline: "Visual",
+    items: ["Da Vinci Resolve", "TouchDesigner", "Resolume"],
+  },
+];
 
 function About() {
   return (
-    <section className="app">
-      <div className="parallax-section">
-        <div
-          className="parallax-bg"
-          style={{ backgroundImage: `url(${borisTrees})` }}
-          aria-hidden="true"
-        />
+    <section id="about" className="section about">
+      <div className="eyebrow">
+        <span className="eyebrow-num">02</span>
+        <span>About</span>
+        <span className="eyebrow-rule" />
+      </div>
 
-        <div className="parallax-content">
-          <div className="content-container" id="about">
-            <div className="pt-5 page-header">ABOUT.</div>
+      <h2 className="section-title">
+        I am Boris<span className="accent">.</span>
+      </h2>
 
-            <div className="">
-              <h1 className="my-5">I AM BORIS.</h1>
+      <div className="about-statements">
+        {STATEMENTS.map(({ statement, points }) => (
+          <div className="about-statement" key={statement}>
+            <h3 className="about-statement-title">{statement}</h3>
+            <ul className="about-points">
+              {points.map((point) => (
+                <li key={point}>
+                  <span className="accent">&rarr;</span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
 
-              <h2 className="about-subheader">
-                I am a full-stack software developer.
-              </h2>
-              <ul className="about-ul">
-                <li>
-                  I develop applications providing ethical quality of life
-                  solutions to modern and future problems.
-                </li>
-                <li>
-                  I have worked in healthcare tech, audio streaming tech, and
-                  freelance app development.
-                </li>
-              </ul>
-              <h2 className="about-subheader">
-                I am an audio engineer and educator.
-              </h2>
-              <ul className="about-ul">
-                <li>
-                  I have engineered & done sound design for established bands and artists.
-                </li>
-                <li>
-                  I have done SFX and scoring / soundtrack for video projects.
-                </li>
-                <li>
-                  I have taught audio post-production, audio engineering, and sound
-                  fundamentals at SAE technical institute.
-                </li>
-              </ul>
-              <h2 className="about-subheader">
-                I am an A/V artist and musician.
-              </h2>
-              <ul className="about-ul">
-                <li>
-                I have toured the continental U.S. for over a decade as an
-                electronic musician.
-                </li>
-                <li>
-                I continue to write and release music
-                under several musical aliases.
-                </li>
-                <li>
-                I am working on exciting new A/V
-                endeavors and interactive art.
-                </li>
-              </ul>
-              <p className="about-p">
+      <div className="about-portrait-row">
+        <figure className="media media--16x10 grayscale">
+          <img src={mural} alt="Boris Gladkikh in front of a mural wall" />
+        </figure>
+        <div className="about-portrait-note">
+          <span className="label about-portrait-label">Portland, OR</span>
+          <p>
+            A decade of touring, teaching and building // The same principles
+            applied to code, system design, and art.
+          </p>
+        </div>
+      </div>
 
-              </p>
+      <h2 className="section-title about-skills-title">
+        Skills<span className="accent">.</span>
+      </h2>
 
-              {/* <h3 className="">
-                I am currently part of the dev team at Radio Paradise, working
-                to bring human-curated music to people for free, without ads.
-              </h3> */}
-              <div className="pt-5 page-header">SKILLS.</div>
-              <div className="skills-grid">
-                <div className="skills-box">
-                  <h4>CODE</h4>
-                  <ul>
-                    <li>Javascript, Typescript, C#, Python</li>
-                    <li>Angular, React, Next.JS, Node.JS, ExpressJS</li>
-                    <li>.NET MVC, .NET Core</li>
-                    <li>SQL, NoSQL, PostgreSQL MySQL MongoDB, MSSQL</li>
-                    <li>Azure - AZ900 Certified, AWS, S3, Amplify, Lambda</li>
-                  </ul>
-                </div>
-                <div className="skills-box">
-                  <h4>DESIGN </h4>
-                  <ul>
-                    <li>HTML5,CSS3, SCSS</li>
-                    <li>Material-UI, Bootstrap, Tailwind</li>
-                    <li>Photoshop, Illustrator, Indesign</li> <li>Figma</li>
-                  </ul>
-                </div>
-                <div className="skills-box">
-                  <h4>AUDIO </h4>
-                  <ul>
-                    <li>Ableton Live, Pro Tools, Cubase, Logic</li>
-                    <li>FMOD, WWISE</li>
-                    <li>
-                      Signal flow, engineering, recording studio experience
-                    </li>
-                    <li>Composition, scoring, soundtrack </li>
-                    <li>Post-production, SFX design, Foley, Mixing</li>
-                  </ul>
-                </div>
-                <div className="skills-box">
-                  <h4>VISUAL </h4>
-                  <ul>
-                    <li>Da Vinci Resolve</li> <li>TouchDesigner</li>{" "}
-                    <li>Resolume</li>
-                  </ul>
-                </div>
-              </div>
+      <div className="about-skills">
+        {SKILLS.map(({ discipline, items }, i) => (
+          <div className="about-skill-row" key={discipline}>
+            <div className="about-skill-head">
+              <span className="index-num">{String(i + 1).padStart(2, "0")}</span>
+              <h4>{discipline}</h4>
+            </div>
+            <div className="about-skill-items">
+              {items.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );

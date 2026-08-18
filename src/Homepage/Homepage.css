@@ -1,70 +1,69 @@
-.home-wrap {
-  position: relative;
-  min-height: 100vh;
+.home {
+  padding: 7vw var(--space-8) var(--space-8);
 }
 
-.logo-container {
-  margin: 0 auto;
-  padding: 20px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family:"system-ui";
-}
-
-#about, #portfolio, #contact
-{
-  /* background: rgba(0,0,0,0.85); 
-  backdrop-filter: blur(1px);   */
-background: black;
-}
-
-
-.logo-container img {
-width: 100vw;
-height: auto;
-}
-
-.header {
-  font-size: 160px;
+.home-name {
+  margin: var(--space-6) 0 0;
+  font-size: clamp(52px, 11.6vw, 190px);
+  line-height: 0.86;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.9fr) minmax(0, 0.62fr);
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  /* border-top: 2px solid var(--color-divider); */
+}
+
+.home-lede {
+  display: grid;
+  gap: var(--space-8);
+  align-content: start;
+}
+
+.home-tagline {
+  margin: 0;
+  max-width: 30ch;
+  font-family: var(--font-heading);
   font-weight: 600;
- }
-
- .sub-header {
-  margin-top: 20px;
-  width: 100%;
-  text-align: center;
- }
-
- @media only screen and (max-width: 1400px) {
-  .sub-header {
-    width: unset;
-  }
- }
-
-@media only screen and (max-width:1000px) {
-  .header {
-    font-size:80px;
-  }
-  .sub-header {
-    font-size: 18px;
-    text-align: left;
-  }
+  font-size: clamp(19px, 2.4vw, 34px);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  text-wrap: pretty;
 }
-@media only screen and (max-width:600px) {
-  .header {
-    font-size:72px;
-  }
 
-  .sub-header {
-    font-size: 12px;
-  }
+.home-disciplines {
+  display: grid;
+  gap: var(--space-3);
+  padding-top: var(--space-4);
+  /* border-top: 1px solid var(--color-divider); */
 }
-@media only screen and (max-width:400px) {
-  .header {
-    font-size:60px;
+
+.home-discipline-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  font-family: var(--font-heading);
+  font-weight: var(--font-heading-weight);
+  font-size: clamp(16px, 1.5vw, 22px);
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .home {
+    padding-inline: var(--space-4);
   }
 
+  .home-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-grid .media {
+    max-width: 380px;
+  }
 }

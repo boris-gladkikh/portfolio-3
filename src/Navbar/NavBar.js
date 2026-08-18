@@ -1,108 +1,109 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import React, { useCallback, useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
 import "./Navbar.css";
 
 const SECTION_IDS = ["home", "about", "portfolio", "contact"];
-const NAV_OFFSET = 80;
 
 function NavBar() {
   const [activeId, setActiveId] = useState("home");
+  const [menuOpen, setMenuOpen] = useState(false);
   const history = useHistory();
   const location = useLocation();
 
   const onHomePage = location.pathname === "/";
 
-  const scrollTo = (id) => {
+  const scrollTo = useCallback((id) => {
     const el = document.getElementById(id);
     if (!el) return;
     el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
+  }, []);
 
-  const handleNav = (id) => {
+  const handleNav = (evt, id) => {
+    evt.preventDefault();
+    setMenuOpen(false);
+
     if (onHomePage) {
-      // We're on "/" so the sections exist
       scrollTo(id);
-      // Keep URL in sync (optional but nice)
       window.history.replaceState(null, "", id === "home" ? "/" : `/#${id}`);
     } else {
-      // We're on a project route; go back to home with a hash
+      // on a piece route — go home, the hash effect below does the scrolling
       history.push(id === "home" ? "/" : `/#${id}`);
     }
   };
 
-  // Scroll-spy ONLY on homepage
+  // Scroll-spy: the section occupying the top of the viewport is "current"
   useEffect(() => {
     if (!onHomePage) return;
 
-    let ticking = false;
+    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
+      Boolean
+    );
+    if (!sections.length) return;
 
-    const updateActive = () => {
-      ticking = false;
-      let current = SECTION_IDS[0];
+    const visible = new Map();
 
-      for (const id of SECTION_IDS) {
-        const el = document.getElementById(id);
-        if (!el) continue;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => visible.set(entry.target.id, entry));
 
-        const top = el.getBoundingClientRect().top;
-        if (top <= NAV_OFFSET + 1) current = id;
-      }
+        const current = SECTION_IDS.filter((id) => visible.get(id)?.isIntersecting);
+        // when two sections share the band, the lower one is the one being entered
+        if (current.length) setActiveId(current[current.length - 1]);
+      },
+      // a band just under the nav — a section is current while it crosses it
+      { rootMargin: "-64px 0px -75% 0px", threshold: 0 }
+    );
 
-      setActiveId(current);
-    };
-
-    const onScroll = () => {
-      if (!ticking) {
-        ticking = true;
-        requestAnimationFrame(updateActive);
-      }
-    };
-
-    window.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
-    updateActive();
-
-    return () => {
-      window.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
-    };
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, [onHomePage]);
 
-  // If we arrive on "/" with a hash (from a project page), scroll to it
+  // arriving on "/" with a hash (from a piece route)
   useEffect(() => {
     if (!onHomePage) return;
 
     const hash = location.hash?.replace("#", "");
     if (!hash) return;
 
-    // slight delay ensures DOM is painted
     requestAnimationFrame(() => {
       scrollTo(hash);
       setActiveId(hash);
     });
-  }, [onHomePage, location.hash]);
+  }, [onHomePage, location.hash, scrollTo]);
 
   return (
-    <Navbar expand="lg" variant="dark" className="justify-content-end" id="nav-style">
-      <Navbar.Toggle aria-controls="navigation" />
-      <Navbar.Collapse id="navigation" className="text-center justify-content-end">
-        <Nav style={{ fontSize: "18px" }} className="alata-font text-white">
-          {SECTION_IDS.map((id) => (
-            <Nav.Item key={id}>
-              <button
-                type="button"
-                className={`nav-btn px-1 ${onHomePage && activeId === id ? "active" : ""}`}
-                onClick={() => handleNav(id)}
-              >
-                {id.toUpperCase()}
-              </button>
-            </Nav.Item>
-          ))}
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <header className={`nav site-nav ${menuOpen ? "is-open" : ""}`}>
+      <a
+        className="nav-brand"
+        href="#home"
+        onClick={(e) => handleNav(e, "home")}
+      >
+        BORIS GLADKIKH<span className="accent">.</span>
+      </a>
+
+      <button
+        type="button"
+        className="nav-toggle"
+        aria-expanded={menuOpen}
+        aria-controls="site-nav-links"
+        onClick={() => setMenuOpen((open) => !open)}
+      >
+        {menuOpen ? "CLOSE" : "MENU"}
+      </button>
+
+      <nav className="nav-links" id="site-nav-links">
+        {SECTION_IDS.map((id) => (
+          <a
+            key={id}
+            href={`#${id}`}
+            aria-current={onHomePage && activeId === id ? "page" : undefined}
+            onClick={(e) => handleNav(e, id)}
+          >
+            {id.toUpperCase()}
+          </a>
+        ))}
+      </nav>
+    </header>
   );
 }
 

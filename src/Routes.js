@@ -1,9 +1,6 @@
 import React from 'react';
 import {Route, Switch, Redirect} from 'react-router-dom';
 import NavBar from './Navbar/NavBar';
-import About from './About/About';
-import Portfolio from './Portfolio/Portfolio';
-import Contact from './Contact/Contact';
 import Homepage from './Homepage/Homepage';
 
 
@@ -31,11 +28,15 @@ function Routes() {
     <>
     <NavBar/>
     <Switch>
+    {/* The site is one page now — the old section routes keep working as anchors */}
     <Route exact path="/about">
-      <About />     
+      <Redirect to="/#about" />
     </Route>
     <Route exact path="/portfolio">
-      <Portfolio />
+      <Redirect to="/#portfolio" />
+    </Route>
+    <Route exact path="/contact">
+      <Redirect to="/#contact" />
     </Route>
     <Route exact path="/001">
       <GridRepel />
@@ -81,10 +82,6 @@ function Routes() {
     </Route>
     <Route exact path="/015">
     <GlitchReveal/>
-    </Route>
-
-    <Route exact path="/contact">
-      <Contact />
     </Route>
 
     <Route exact path="/">

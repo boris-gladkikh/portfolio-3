@@ -1,1 +1,14 @@
+.contact-title {
+  margin-bottom: var(--space-8);
+}
 
+.contact-form-wrap {
+  padding-top: var(--space-6);
+  /* border-top: 2px solid var(--color-divider); */
+}
+
+@media (max-width: 1000px) {
+  .contact {
+    padding-inline: var(--space-4);
+  }
+}

@@ -6,8 +6,15 @@ import Project from "./Project";
 import DesignItem from "./DesignItem";
 import DesignModal from "./DesignModal";
 import "./Portfolio.css";
-import borisGraf from "../img/boris-grafiti-large-web.jpg";
-import SnapCarousel from "../components/SnapCarousel";
+
+function CategoryHead({ title, children }) {
+  return (
+    <div className="portfolio-category">
+      <h3>{title}</h3>
+      <p>{children}</p>
+    </div>
+  );
+}
 
 function Portfolio() {
   const [activeDesign, setActiveDesign] = useState(null);
@@ -15,65 +22,59 @@ function Portfolio() {
   const freelance = projectList.filter((p) => p.type === "freelance");
 
   return (
-    <>
-      <div className="app">
-        <div className="parallax-section">
-          <div
-            className="parallax-bg"
-            style={{ backgroundImage: `url(${borisGraf})` }}
-            aria-hidden="true"
-          />
-          <div className="parallax-content">
-            <div className="content-container" id="portfolio">
-              <div className="pt-5 page-header">PORTFOLIO.</div>
-              <div className="mb-5">
-                <h2 className="mt-5">CREATIVE</h2>
-                <div className="my-4 portfolio-description">
-                  A series of interactive art pieces with an emphasis on
-                  minimalism and user intuition / interaction. Desktop only.
-                </div>
-
-                <SnapCarousel>
-                  {creativeProjects.map((p) => (
-                    <Project key={p.id ?? p.title} project={p} />
-                  ))}
-                </SnapCarousel>
-              </div>
-              <div className="mb-5">
-                <h2 className="mt-5">FREELANCE</h2>
-                <div className="my-4 portfolio-description">
-                  Personal and freelance web development projects. Please
-                  contact for corporate/enterprise projects.
-                </div>
-                <SnapCarousel>
-                  {freelance.map((p) => (
-                    <Project key={p.id ?? p.title} project={p} type={p.type} />
-                  ))}
-                </SnapCarousel>
-
-              </div>
-              <h2 className="mt-5">DESIGN</h2>
-              <div className="my-4 portfolio-description">
-              Examples of graphic design work, album art, one sheets, epk's and flyers.               
-                </div>
-              <SnapCarousel>
-                {designList.map((d) => (
-                  <DesignItem
-                    key={d.id ?? d.name}
-                    design={d}
-                    onOpen={() => setActiveDesign(d)}
-                  />
-                ))}
-              </SnapCarousel>
-              <DesignModal
-                design={activeDesign}
-                onClose={() => setActiveDesign(null)}
-              />
-            </div>
-          </div>
-        </div>
+    <section id="portfolio" className="section portfolio">
+      <div className="eyebrow">
+        <span className="eyebrow-num">03</span>
+        <span>Portfolio</span>
+        <span className="eyebrow-rule" />
       </div>
-    </>
+
+      <h2 className="section-title portfolio-title">
+        Portfolio<span className="accent">.</span>
+      </h2>
+
+      <CategoryHead title="Creative">
+        A series of interactive art pieces with an emphasis on minimalism and
+        user intuition / interaction. Desktop only.
+      </CategoryHead>
+
+      <div className="portfolio-creative-grid">
+        {creativeProjects.map((project) => (
+          <Project key={project.number} project={project} />
+        ))}
+      </div>
+
+      <CategoryHead title="Freelance">
+        Personal and freelance web development projects. Please contact for
+        corporate/enterprise projects.
+      </CategoryHead>
+
+      <div className="portfolio-freelance">
+        {freelance.map((project, i) => (
+          <Project key={project.title} project={project} index={i + 1} />
+        ))}
+      </div>
+
+      <CategoryHead title="Design">
+        Examples of graphic design work, album art, one sheets, epk's and
+        flyers.
+      </CategoryHead>
+
+      <div className="portfolio-design-grid">
+        {designList.map((design) => (
+          <DesignItem
+            key={design.img}
+            design={design}
+            onOpen={() => setActiveDesign(design)}
+          />
+        ))}
+      </div>
+
+      <DesignModal
+        design={activeDesign}
+        onClose={() => setActiveDesign(null)}
+      />
+    </section>
   );
 }
 

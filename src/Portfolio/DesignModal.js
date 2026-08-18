@@ -14,10 +14,22 @@ function DesignModal({ design, onClose }) {
 
   return (
     <div className="design-modal-overlay" onClick={onClose}>
-      <div className="design-modal" onClick={(e) => e.stopPropagation()}>
-        <img className="modal-image" src={design.img} alt={design.name} />
+      <div
+        className="design-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-label={design.title}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <img className="modal-image" src={design.img} alt={design.title} />
         {design.detail && <div className="modal-detail">{design.detail}</div>}
-        <button className="close-btn" onClick={onClose}>close</button>
+        <button
+          type="button"
+          className="btn btn-primary close-btn"
+          onClick={onClose}
+        >
+          CLOSE
+        </button>
       </div>
     </div>
   );
