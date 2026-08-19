@@ -2,6 +2,16 @@ let projects = [
 
   {
     type:"freelance",
+    title:"Goblinvoice",
+    description: "document generator and freelance business toolkit",
+    frontend:"NextJS, Agentic AI workflow",
+    backend:"Vercel & Supabase",
+    img:"/projects/goblinvoice-site.jpg",
+    link:"https://goblinvoice.com/",
+    github:""
+  },
+  {
+    type:"freelance",
     title:"borisisntreal",
     description: "Artist website for electronic musician borisisntreal. Custrom interactive web art created with JS and CSS.",
     frontend:"React, Typescript, CSS",

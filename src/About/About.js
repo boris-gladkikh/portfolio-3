@@ -100,7 +100,7 @@ function About() {
         <div className="about-portrait-note">
           <span className="label about-portrait-label">Portland, OR</span>
           <p>
-            A decade of touring, teaching and building // The same principles
+            A decade of touring, teaching and building. The same principles
             applied to code, system design, and art.
           </p>
         </div>
