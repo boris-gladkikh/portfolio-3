@@ -4,7 +4,7 @@ import About from "../About/About";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer";
-import portrait from "../img/boris-grafiti-vertical.jpg";
+import portrait from "../img/boris-tree-vertical.jpg";
 
 const DISCIPLINES = ["Code", "Design", "Audio", "Visual"];
 
@@ -41,7 +41,7 @@ function Homepage() {
             </div>
           </div>
 
-          <figure className="media media--3x4 grayscale">
+          <figure className="media media--3x4">
             <img src={portrait} alt="Boris Gladkikh" />
           </figure>
         </div>

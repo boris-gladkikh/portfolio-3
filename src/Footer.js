@@ -14,14 +14,14 @@ function Footer() {
   return (
     <footer className="closing-band">
       <p className="closing-statement">
-        Please contact for corporate/enterprise projects.
+        Reach out for corporate & enterprise projects.
       </p>
 
       <div className="closing-grid">
         <div className="closing-col">
           <span className="closing-label">Direct</span>
           <a className="closing-email" href={`mailto:${EMAIL}`}>
-            {EMAIL}
+            EMAIL
           </a>
         </div>
 
@@ -43,7 +43,7 @@ function Footer() {
 
         <div className="closing-col">
           <span className="closing-label">Availability</span>
-          <p>Open to development, audio and A/V work.</p>
+          <p>Available for development, creative projects,  sound design, post-production, audio production, graphic work and more.</p>
         </div>
       </div>
 

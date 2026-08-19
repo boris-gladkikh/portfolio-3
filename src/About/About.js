@@ -94,7 +94,7 @@ function About() {
       </div>
 
       <div className="about-portrait-row">
-        <figure className="media media--16x10 grayscale">
+        <figure className="media media--16x10 ">
           <img src={mural} alt="Boris Gladkikh in front of a mural wall" />
         </figure>
         <div className="about-portrait-note">
